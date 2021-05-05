@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <link rel="style.css" href="WEB-INF/css/style.css" type="text/css">
+    <link rel="style.css" href="./css/style.css" type="text/css">
     <title>3DTech</title>
 </head>
 <body>

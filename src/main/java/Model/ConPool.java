@@ -31,7 +31,6 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 package Model;
 
-
 import org.apache.tomcat.jdbc.pool.DataSource;
 import org.apache.tomcat.jdbc.pool.PoolProperties;
 
@@ -61,8 +60,4 @@ public class ConPool {
         }
         return datasource.getConnection();
     }
-
-    public static void destroyConnection() {
-		datasource.close(true);
-	}
 }

@@ -1,16 +1,20 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <link rel="style.css" href="WEB-INF/css/style.css" type="text/css">
+    <link rel="style.css" href="./WEB-INF/css/style.css" type="text/css">
     <title>3DTech</title>
 </head>
 <body>
     <header>
         <p>LOGO</p>
         <div class="accesso">
-            <a href="Registrazione.jsp">Registrati</a>
-            <a href="Login.jsp">Login</a>
-            <a href="">Carrello</a>
+            <form action="AccessoServlet" method="post">
+                <a href="Registrazione.jsp">Registrati</a>
+                <a href="Login.jsp">Login</a>
+            </form>
+            <form action="CarrelloServlet" method="post">
+                <a href="">Carrello</a>
+            </form>
         </div>
         <div class="barra">
             <ul>
@@ -21,6 +25,5 @@
             </ul>
         </div>
     </header>
-
 </body>
 </html>
