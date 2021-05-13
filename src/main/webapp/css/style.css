@@ -1,13 +1,113 @@
 header{
-    background: darkcyan;
-    text-align: left;
+    float: right;
+    display: flex;
 }
 
-body{
-    background: darkcyan;
-
+.accesso {
+    float: right;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
 }
 
-.accesso{
+.accesso a{
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.accesso a:link{
+    color: black;
+}
+
+.accesso a:visited{
+    color: black;
+}
+
+.accesso a:hover{
+    color: white;
+    background-color: purple;
+    margin: 0;
+}
+
+nav{
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: purple;
+    width: 100%;
+}
+
+li a{
+    float: left;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 15px;
+    display: block;
+    text-transform: uppercase;
+}
+
+li a:hover{
+    background-color: #CE70CC;
+}
+
+.search input{
+    width: 25%;
+    margin-right: 5%;
+    border: none;
+    float: right;
+}
+
+.prima{
+    border: solid;
+    color: black;
+    float: left;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 49%;
+    height: 40%;
+}
+
+.seconda{
+    border: solid;
+    color: black;
+    float: right;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 1%;
+    width: 49%;
+    height: 40%;
+}
+
+.terza{
+    border: solid;
+    color: black;
+    float: left;
+    margin-bottom: 2%;
+    width: 49%;
+    height: 40%;
+}
+
+.quarta{
+    border: solid;
+    color: black;
+    float: right;
+    margin-bottom: 2%;
+    margin-left: 1%;
+    width: 49%;
+    height: 40%;
+}
+
+footer{
+    border: solid;
+    color: black;
+    margin-bottom: 2%;
+    width: 100%;
+    height: 10%;
     float: right;
 }
