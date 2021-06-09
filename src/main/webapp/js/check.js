@@ -1,5 +1,6 @@
 
 let email = document.getElementById("email")
+
 email.addEventListener("input", function email_check(){
     let text = this.value
     let email_pattern = /(\w+)@(\w+)\.(\w+)/

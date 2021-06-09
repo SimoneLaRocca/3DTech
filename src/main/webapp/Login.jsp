@@ -3,13 +3,14 @@
 <head>
     <link rel="stylesheet" href="./css/style.css" type="text/css">
     <title>Login</title>
+
 </head>
 <body>
-    <%@include file="NavigationBar.jsp"%>
+    <%@include file="WEB-INF/jsp/NavigationBar.jsp"%>
     <div class="login">
-    <form action="LoginServlet" method="post">
-        <label for="username">Username</label>
-        <input class="input" type="text" id="username" name="username" value=""><br><br>
+    <form action="${contextPath}LoginServlet" method="post">
+        <label for="email">Email</label>
+        <input class="input" type="email" id="email" name="email" value=""><br><br>
         <label for="password">Password</label>
         <input class="input" type="password" id="password" name="password" value=""><br><br><br>
         <input class="accedi" type="submit" name="Submit" value="Accedi">
