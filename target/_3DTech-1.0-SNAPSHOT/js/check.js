@@ -1,19 +1,17 @@
-const emailField = document.getElementById("email");
-const spanElement = document.getElementById("spanId");
+$("document").ready(function () {
+    // Handler sull'input element con id email
+    $("#email").on("input", function () {
 
-
-emailField.addEventListener("input", function validateEmail() {
-    const text = this.value;
-    const emailPattern = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        const emailError = $("#spanId");
+        const text = this.value;
+        const emailPattern = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
         if (!emailPattern.test(text)) {
             this.style.borderColor = "red";
-            spanElement.style.visibility = "visible";
+            emailError.css("visibility", "visible");
         } else {
             this.style.borderColor = "gainsboro";
-            spanElement.style.visibility = "hidden";
+            emailError.css("visibility", "hidden");
         }
+    });
 });
-
-
-

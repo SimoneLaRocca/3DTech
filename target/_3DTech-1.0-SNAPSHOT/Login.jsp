@@ -2,7 +2,8 @@
 <html>
 <head>
     <link rel="stylesheet" href="./css/style.css" type="text/css">
-    <script async src="js/check.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/check.js" defer></script>
     <title>Login</title>
 </head>
 <body>
