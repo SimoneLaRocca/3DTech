@@ -20,7 +20,6 @@
     <c:if test="${sessionScope.user != null}"> <!--pageContext.request.getSession().getAttribute('user') != null -->
         <div class="utente_loggato">
             <button class="email_user">${sessionScope.user.email}</button>
-            <img src="${contextPath}img/carrello.png">
             <div class="opzioni">
                 <ul>
                     <li><a href="#account">Account</a></li>
@@ -29,20 +28,22 @@
                 </ul>
             </div>
         </div>
+        <img src="${contextPath}img/carrello.png">
     </c:if>
 
 </header>
 <nav>
     <ul class="barra_di_nav">
-        <li><a href="#">Home</a> </li>
-        <li><a href="#">Categorie</a> </li>
-        <li><a href="#">Chi Siamo</a> </li>
-        <li><a href="#">Contatti</a> </li>
-        <li><div class="search">
-            <form>
-                <input type="search" name="search" placeholder="Cerca...">
-            </form>
-        </div>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Categorie</a></li>
+        <li><a href="#">Chi Siamo</a></li>
+        <li><a href="#">Contatti</a></li>
+        <li>
+            <div class="search">
+                <form>
+                    <input type="search" name="search" placeholder="Cerca...">
+                </form>
+            </div>
         </li>
     </ul>
 

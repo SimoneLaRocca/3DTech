@@ -1,4 +1,4 @@
-header{
+header {
     float: right;
     display: flex;
 }
@@ -10,27 +10,27 @@ header{
     flex-direction: row;
 }
 
-.accesso a{
+.accesso a {
     color: black;
     text-decoration: none;
     padding: 5px;
 }
 
-.accesso a:link{
+.accesso a:link {
     color: black;
 }
 
-.accesso a:visited{
+.accesso a:visited {
     color: black;
 }
 
-.accesso a:hover{
+.accesso a:hover {
     color: white;
     background-color: #007763;
     margin: 0;
 }
 
-.barra_di_nav{
+.barra_di_nav {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -39,7 +39,7 @@ header{
     width: 100%;
 }
 
-nav a{
+nav a {
     float: left;
     color: white;
     text-align: center;
@@ -49,11 +49,11 @@ nav a{
     text-transform: uppercase;
 }
 
-nav a:hover{
+nav a:hover {
     background-color: #009687;
 }
 
-.search input{
+.search input {
     outline: none;
     width: 25%;
     margin-right: 5%;
@@ -61,7 +61,7 @@ nav a:hover{
     float: right;
 }
 
-.prima{
+.prima {
     border: solid;
     color: black;
     float: left;
@@ -71,7 +71,7 @@ nav a:hover{
     height: 40%;
 }
 
-.seconda{
+.seconda {
     border: solid;
     color: black;
     float: right;
@@ -82,7 +82,7 @@ nav a:hover{
     height: 40%;
 }
 
-.terza{
+.terza {
     border: solid;
     color: black;
     float: left;
@@ -91,7 +91,7 @@ nav a:hover{
     height: 40%;
 }
 
-.quarta{
+.quarta {
     border: solid;
     color: black;
     float: right;
@@ -101,7 +101,7 @@ nav a:hover{
     height: 40%;
 }
 
-footer{
+footer {
     border: solid;
     color: black;
     margin-bottom: 2%;
@@ -110,11 +110,11 @@ footer{
     float: right;
 }
 
-body{
-    margin:0;
+body {
+    margin: 0;
 }
 
-.login{
+.login {
     box-sizing: border-box;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 0px 2px rgba(0, 0, 0, 0.08);
     border-radius: 2px;
@@ -126,7 +126,7 @@ body{
     height: 200px;
 }
 
-.registrazione{
+.registrazione {
     box-sizing: border-box;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 0px 2px rgba(0, 0, 0, 0.08);
     border-radius: 2px;
@@ -138,7 +138,7 @@ body{
     height: 620px;
 }
 
-.accedi{
+.accedi {
     color: white;
     border-radius: 4px;
     padding: 4px 8px;
@@ -149,22 +149,22 @@ body{
     height: 20px;
 }
 
-.input{
+.input {
     border-style: solid;
     border-radius: 2px;
     width: 100%;
     outline: none;
 }
 
-.input:hover{
+.input:hover {
     border-color: #007763;
 }
 
-.accedi:hover{
+.accedi:hover {
     background-image: linear-gradient(#009687 0%, #007763 100%);
 }
 
-.completed{
+.completed {
     box-sizing: border-box;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 0px 2px rgba(0, 0, 0, 0.08);
     border-radius: 2px;
@@ -176,59 +176,78 @@ body{
     height: 220px;
 }
 
-.check_mark{
+.check_mark {
     float: right;
     height: 100px;
 }
 
-.utente_loggato{
+.utente_loggato {
+    /*padding-top: 20px;*/
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    position: relative;
+    top: 17px;
 }
 
-.opzioni {
-    display: none;
-}
 
-.down{
+.utente_loggato:hover .opzioni {
     display: block;
+}
+
+.utente_loggato .opzioni {
+    display: none;
     position: absolute;
     color: black;
     background-color: #f8f8f8;
     padding-left: 2px;
     padding-bottom: 2px;
     padding-top: 2px;
+    border: 2px solid black;
+    width: 142px;
 }
 
-div.opzioni a{
+/*.down {
+    display: inline-block;
+    position: absolute;
+    color: black;
+    background-color: #f8f8f8;
+    padding-left: 2px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+}*/
+
+
+div.opzioni a {
     text-decoration: none;
-    padding: 12px 16px;
+    text-align: center;
+    padding: 12px 12px;
     display: block;
     color: black;
 }
 
-div.opzioni a:hover{
+div.opzioni a:hover {
     background-color: lightgrey;
-    text-decoration: none;
-    color: black;
 }
 
-.email_user{
+.email_user {
     border: none;
     background-color: white;
     color: black;
+    position: relative;
+    bottom: 0;
     text-align: center;
-    text-decoration: none;
     padding: 8px;
     margin-right: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
-.email_user:hover{
+.email_user:hover {
     border: none;
     background-color: #007763;
     color: white;
     text-align: center;
-    text-decoration: none;
     padding: 8px;
     margin-right: 0px;
     margin-top: 0px;
@@ -241,7 +260,7 @@ div.opzioni ul {
     max-width: 120px;
 }
 
-div.opzioni li{
+div.opzioni li {
     list-style: none;
     width: 100%;
     float: left;
@@ -250,7 +269,7 @@ div.opzioni li{
     color: black;
 }
 
-.carrello{
+.carrello {
     width: 50px;
     height: 30px;
     float: right;

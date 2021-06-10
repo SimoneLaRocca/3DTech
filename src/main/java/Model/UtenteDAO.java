@@ -31,7 +31,7 @@ public class UtenteDAO {
 
             while (rs.next()) {
                 Utente user = new Utente();
-                user.setId(rs.getInt("Id"));
+                user.setId(rs.getInt("id_utente"));
                 user.setEmail(rs.getString("Email"));
                 user.setPasswordhash(rs.getString("Passwordhash"));
                 user.setName(rs.getString("Nome"));
@@ -85,7 +85,7 @@ public class UtenteDAO {
                 utente.setName(set.getString("nome"));
                 utente.setSurname(set.getString("cognome"));
                 utente.setPhoneNumber(set.getString("telefono"));
-                utente.setId(set.getInt("id"));
+                utente.setId(set.getInt("id_utente"));
                 utente.setCity(set.getString("citta"));
                 utente.setZIPCode(set.getString("CAP"));
                 utente.setStreet(set.getString("via"));
@@ -111,7 +111,7 @@ public class UtenteDAO {
                 utente.setName(set.getString("nome"));
                 utente.setSurname(set.getString("cognome"));
                 utente.setPhoneNumber(set.getString("telefono"));
-                utente.setId(set.getInt("id"));
+                utente.setId(set.getInt("id_utente"));
                 utente.setCity(set.getString("citta"));
                 utente.setZIPCode(set.getString("CAP"));
                 utente.setStreet(set.getString("via"));

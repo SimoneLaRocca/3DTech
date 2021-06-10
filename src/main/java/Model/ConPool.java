@@ -46,10 +46,10 @@ public class ConPool {
         if (datasource == null) {
 
             PoolProperties p = new PoolProperties();
-            p.setUrl("jdbc:mysql://localhost:3306/3dtech_database?serverTimezone=" + TimeZone.getDefault().getID());
+            p.setUrl("jdbc:mysql://localhost:3306/progettoTSW?serverTimezone=" + TimeZone.getDefault().getID());
             p.setDriverClassName("com.mysql.cj.jdbc.Driver");
             p.setUsername("root");
-            p.setPassword("paone0000");
+            p.setPassword("qazwsx");
             p.setMaxActive(100);
             p.setInitialSize(10);
             p.setMinIdle(10);
