@@ -71,12 +71,38 @@ public class UtenteDAO {
         return ordini;
     }
 
-    public Utente doRetrieveEmailPassword(Utente user) {
+    public Utente doRetrieveByEmailPassword(Utente user) {
         try (PreparedStatement ps = connection.prepareStatement("SELECT * FROM utente" +
                 " WHERE email = ? AND passwordHash = ?")) {
 
             ps.setString(1, user.getEmail());
             ps.setString(2, user.getPasswordhash());
+            ResultSet set = ps.executeQuery();
+
+            if (set.next()) {
+                Utente utente = new Utente();
+                utente.setEmail(set.getString("email"));
+                utente.setName(set.getString("nome"));
+                utente.setSurname(set.getString("cognome"));
+                utente.setPhoneNumber(set.getString("telefono"));
+                utente.setId(set.getInt("id"));
+                utente.setCity(set.getString("citta"));
+                utente.setZIPCode(set.getString("CAP"));
+                utente.setStreet(set.getString("via"));
+                return utente;
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+        return null;
+    }
+
+    public Utente doRetrieveByEmail(Utente user) {
+        try (PreparedStatement ps = connection.prepareStatement("SELECT * FROM utente" +
+                " WHERE email = ?")) {
+
+            ps.setString(1, user.getEmail());
             ResultSet set = ps.executeQuery();
 
             if (set.next()) {
@@ -119,13 +145,6 @@ public class UtenteDAO {
 
             if (ps.executeUpdate() != 1) throw new RuntimeException();
 
-            /*ResultSet keys = ps.getGeneratedKeys();
-            if (keys.next()) {
-                user.setId(keys.getInt(1));
-            }*/
-
-            //TODO modificare questo metodo
-            user.setId(1);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

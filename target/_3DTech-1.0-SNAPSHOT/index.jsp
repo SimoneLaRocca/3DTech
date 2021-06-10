@@ -5,7 +5,8 @@
     <title>3DTech</title>
 </head>
 <body>
-   <%@include file="NavigationBar.jsp"%>
+        <%@include file="WEB-INF/jsp/NavigationBar.jsp"%>
+
     <section class="prima">
         Sconti
     </section>

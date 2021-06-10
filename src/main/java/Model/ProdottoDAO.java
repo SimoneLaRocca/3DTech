@@ -19,7 +19,7 @@ public class ProdottoDAO {
         }
     }
 
-    public void doSaveJson(String s) {
+    public void doSaveJson(String s) { // ??
         try (PreparedStatement ps = con.prepareStatement("INSERT INTO test VALUE(?)")) {
             ps.setString(1, s);
             if (ps.executeUpdate() != 1) throw new RuntimeException();
@@ -28,7 +28,7 @@ public class ProdottoDAO {
         }
     }
 
-    public String doRetrieveJson() {
+    public String doRetrieveJson() { // ??
         String s = "";
         try (PreparedStatement ps = con.prepareStatement("SELECT * from test WHERE json_column->'$.name' = ?")) {
             ps.setString(1, "gigi");

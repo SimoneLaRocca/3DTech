@@ -49,8 +49,7 @@ public class Utente {
 
     public void setPasswordhash(String passwordhash) {
         try {
-            MessageDigest digest =
-                    MessageDigest.getInstance("SHA-1");
+            MessageDigest digest = MessageDigest.getInstance("SHA-1");
             digest.reset();
             digest.update(passwordhash.getBytes(StandardCharsets.UTF_8));
             this.passwordhash = String.format("%040x", new
