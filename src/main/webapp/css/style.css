@@ -161,7 +161,7 @@ body{
 }
 
 .accedi:hover{
-    background-image: linear-gradient(#009687 0%, #007763 100%);
+    background-image: linear-gradient(#007763 0%, #009687 100%);
 }
 
 .completed{
@@ -251,7 +251,229 @@ div.opzioni li{
 }
 
 .carrello{
-    width: 50px;
-    height: 30px;
+    width: 35px;
+    height: 32px;
     float: right;
+}
+
+div.cat1 {
+    border: solid;
+    color: #007763;
+    float: left;
+    margin-left: 7.5%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    width: 40%;
+    height: 30%;
+}
+
+div.cat2 {
+    border: solid;
+    color: #007763;
+    float: left;
+    margin-left: 2.5%;
+    margin-right: 7.5%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    width: 40%;
+    height: 30%;
+}
+
+div.cat2 img{
+    width: 50%;
+    height: 90%;
+}
+
+div.cat1 img{
+    width: 50%;
+    height: 100%;
+}
+
+div.cat1 *{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.three_hor_lines{
+    height: 18px;
+    width: 18px;
+}
+
+ul.hamburger_menu{
+    background-color: #DBDCDB;
+    display: none;
+    width: 20%;
+    height: 100%;
+    margin: 0px;
+    list-style: none;
+    padding: 0px;
+    position: absolute;
+}
+
+ul.hamburger_menu a{
+    display: block;
+    background-color: #DBDCDB;
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+    margin: 0px;
+    font-family: "Franklin Gothic Medium";
+    text-transform: uppercase;
+}
+
+/*ul.hamburger_menu a.logout{
+    position: absolute;
+    top: 93%;
+}*/
+
+ul.hamburger_menu a:hover{
+    background-color: #D1D2D1;
+}
+
+ul.hamburger_menu_visible{
+    display: block;
+}
+
+.posizione_corrente{
+    background-color: #007763;
+    color: white;
+}
+
+.product{
+    display: flex;
+}
+
+.add_product{
+    width: 300px;
+    height: 510px;
+    border: solid 1px lightgrey;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.add_product_label{
+    text-align: center;
+    background-color: #007763;
+    color: white;
+    border: solid 1px lightgrey;
+    margin: 1px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.add_product_input{
+    padding: 20px;
+}
+
+div.add_product_input input[type="submit"]{
+    float: right;
+}
+
+.agg{
+    color: white;
+    border-radius: 4px;
+    padding: 4px 8px;
+    min-height: 24px;
+    border: none;
+    background-image: linear-gradient(#009687 0%, #007763 100%);
+    width: 150px;
+    height: 20px;
+}
+
+.agg:hover{
+    background-image: linear-gradient(#007763 0%, #009687 100%);
+}
+
+.rem_product{
+    width: 300px;
+    height: 165px;
+    border: solid 1px lightgrey;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.rem_product_label{
+    text-align: center;
+    background-color: #007763;
+    color: white;
+    border: solid 1px lightgrey;
+    margin: 1px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.rem_product_input{
+    padding: 20px;
+}
+
+div.rem_product_input input[type="submit"]{
+    float: right;
+}
+
+.mod_product{
+    width: 300px;
+    height: 570px;
+    border: solid 1px lightgrey;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.mod_product_label{
+    text-align: center;
+    background-color: #007763;
+    color: white;
+    border: solid 1px lightgrey;
+    margin: 1px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.mod_product_input{
+    padding: 20px;
+}
+
+div.mod_product_input input[type="submit"]{
+    float: right;
+}
+
+.rtable {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 100%;
+    width: 75%;
+    overflow-x: auto;
+    white-space: nowrap;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.rtable {
+    -webkit-overflow-scrolling: touch;
+    background-size: 10px 100%, 10px 100%;
+}
+.rtable td:first-child {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+    background-repeat: no-repeat;
+    background-size: 20px 100%;
+}
+.rtable td:last-child {
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size: 20px 100%;
+}
+.rtable th {
+    font-size: 11px;
+    text-align: left;
+    text-transform: uppercase;
+    background: #007763;
+    color: white;
+}
+
+.rtable th, .rtable td {
+    padding: 6px 12px;
+    border: 1px solid #d9d7ce;
+}
+
+table {
+    margin-top: 30px;
 }

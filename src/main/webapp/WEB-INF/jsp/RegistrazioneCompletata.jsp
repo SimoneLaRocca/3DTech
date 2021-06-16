@@ -9,13 +9,13 @@
 <html>
 <head>
     <title>Registrazione Completata</title>
-    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="stylesheet" href="../../css/style.css" type="text/css">
 </head>
 <body>
-    <%@include file="WEB-INF/jsp/NavigationBar.jsp"%>
+    <%@include file="NavigationBar.jsp"%>
     <div class="completed">
         <p>Registrazione completata!</p>
-        <img class="check_mark" src="img/check_mark.png">
+        <img class="check_mark" src="../../img/check_mark.png">
     </div>
 
 </body>

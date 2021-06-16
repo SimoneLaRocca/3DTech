@@ -1,12 +1,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="stylesheet" href="../../css/style.css" type="text/css">
     <title>Login</title>
 
 </head>
 <body>
-    <%@include file="WEB-INF/jsp/NavigationBar.jsp"%>
+    <%@include file="NavigationBar.jsp"%>
     <div class="login">
     <form action="${contextPath}LoginServlet" method="post">
         <label for="email">Email</label>

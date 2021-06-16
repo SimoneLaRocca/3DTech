@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <%@include file="WEB-INF/jsp/NavigationBar.jsp"%>
+    <%@include file="NavigationBar.jsp"%>
 
     <div class="registrazione">
     <form action="RegistrazioneServlet" method="post">

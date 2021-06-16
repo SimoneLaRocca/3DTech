@@ -19,9 +19,5 @@
     <section class="quarta">
         Recenti
     </section>
-
-    <footer>
-
-    </footer>
 </body>
 </html>

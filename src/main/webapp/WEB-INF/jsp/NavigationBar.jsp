@@ -12,15 +12,17 @@
 
     <c:if test="${sessionScope.user == null}">
         <div class="accesso">
-            <a href="http://localhost:8080/3DTech_war_exploded/Registrazione.jsp">Registrati</a>
-            <a href="http://localhost:8080/3DTech_war_exploded/Login.jsp">Login</a>
+            <a href="${contextPath}Registrazione.jsp">Registrati</a>
+            <a href="${contextPath}Login.jsp">Login</a>
         </div>
     </c:if>
 
     <c:if test="${sessionScope.user != null}"> <!--pageContext.request.getSession().getAttribute('user') != null -->
         <div class="utente_loggato">
             <button class="email_user">${sessionScope.user.email}</button>
-            <img src="${contextPath}img/carrello.png">
+            <a href="#pagina_carello">
+                <img class="carrello" src="${contextPath}img/carrello.png">
+            </a>
             <div class="opzioni">
                 <ul>
                     <li><a href="#account">Account</a></li>
@@ -35,7 +37,7 @@
 <nav>
     <ul class="barra_di_nav">
         <li><a href="#">Home</a> </li>
-        <li><a href="#">Categorie</a> </li>
+        <li><a href="${contextPath}Categorie.jsp">Categorie</a> </li>
         <li><a href="#">Chi Siamo</a> </li>
         <li><a href="#">Contatti</a> </li>
         <li><div class="search">
