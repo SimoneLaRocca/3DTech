@@ -17,19 +17,17 @@ public class LoginServlet extends HttpServlet {
         u.setPasswordhash(request.getParameter("password"));
         UtenteDAO uDAO = new UtenteDAO();
 
-        if(uDAO.doRetrieveByEmailPassword(u)!=null){
+        if (uDAO.doRetrieveByEmailPassword(u) != null) {
             HttpSession session = request.getSession();
             session.setAttribute("user", u);
-            RequestDispatcher rd = request.getRequestDispatcher("/Home.jsp");
-            rd.forward(request,response);
-        }else {
-            RequestDispatcher rd = request.getRequestDispatcher("/Login.jsp");
-            rd.forward(request,response);
+            response.sendRedirect(request.getContextPath() + "/index.jsp");
+        } else {
+            response.sendRedirect(request.getContextPath() + "/index.jsp");
         }
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        doGet(request,response);
+        doGet(request, response);
     }
 }
