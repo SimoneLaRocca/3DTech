@@ -1,3 +1,4 @@
+
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
@@ -8,7 +9,6 @@
     <script defer src="js/hamburger.js"></script>
 </head>
 
-<div>
     <nav>
         <div class="barra_di_nav">
             <a href="#"><img class="three_hor_lines" src="img/three_horizontal_lines_white.png"></a>
@@ -99,32 +99,33 @@
 
         </div>
 
-        <table class="rtable">
-            <thead>
-            <tr>
-                <th>id</th>
-                <th>nome</th>
-                <th>marchio</th>
-                <th>prezzo</th>
-                <th>peso</th>
-                <th>categoria</th>
-            </tr>
-            </thead>
-            <tbody>
-            <c:forEach items="${applicationScope.listProducts}" var="product">
-                <tr>
-                    <td>${product.id}</td>
-                    <td>${product.nome}</td>
-                    <td>${product.marchio}</td>
-                    <td>${product.prezzo}</td>
-                    <td>${product.peso}</td>
-                    <td>${product.categoria.nome}</td>
-                </tr>
-            </c:forEach>
-            </tbody>
-        </table>
+
     </div>
 
+    <table class="rtable">
+        <thead>
+        <tr>
+            <th>id</th>
+            <th>nome</th>
+            <th>marchio</th>
+            <th>prezzo</th>
+            <th>peso</th>
+            <th>categoria</th>
+        </tr>
+        </thead>
+        <tbody>
+        <c:forEach items="${applicationScope.listProducts}" var="product">
+            <tr>
+                <td>${product.id}</td>
+                <td>${product.nome}</td>
+                <td>${product.marchio}</td>
+                <td>${product.prezzo}</td>
+                <td>${product.peso}</td>
+                <td>${product.categoria.nome}</td>
+            </tr>
+        </c:forEach>
+        </tbody>
+    </table>
 
     </body>
 </html>

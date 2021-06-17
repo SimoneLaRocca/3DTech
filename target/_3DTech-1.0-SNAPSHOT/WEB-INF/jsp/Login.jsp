@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <link rel="stylesheet" href="../../css/style.css" type="text/css">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
     <title>Login</title>
 
 </head>

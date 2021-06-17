@@ -1,4 +1,4 @@
-header{
+header {
     float: right;
     display: flex;
 }
@@ -10,27 +10,27 @@ header{
     flex-direction: row;
 }
 
-.accesso a{
+.accesso a {
     color: black;
     text-decoration: none;
     padding: 5px;
 }
 
-.accesso a:link{
+.accesso a:link {
     color: black;
 }
 
-.accesso a:visited{
+.accesso a:visited {
     color: black;
 }
 
-.accesso a:hover{
+.accesso a:hover {
     color: white;
     background-color: #007763;
     margin: 0;
 }
 
-.barra_di_nav{
+.barra_di_nav {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -39,7 +39,7 @@ header{
     width: 100%;
 }
 
-nav a{
+nav a {
     float: left;
     color: white;
     text-align: center;
@@ -49,11 +49,11 @@ nav a{
     text-transform: uppercase;
 }
 
-nav a:hover{
+nav a:hover {
     background-color: #009687;
 }
 
-.search input{
+.search input {
     outline: none;
     width: 25%;
     margin-right: 5%;
@@ -61,7 +61,7 @@ nav a:hover{
     float: right;
 }
 
-.prima{
+.prima {
     border: solid;
     color: black;
     float: left;
@@ -71,7 +71,7 @@ nav a:hover{
     height: 40%;
 }
 
-.seconda{
+.seconda {
     border: solid;
     color: black;
     float: right;
@@ -82,7 +82,7 @@ nav a:hover{
     height: 40%;
 }
 
-.terza{
+.terza {
     border: solid;
     color: black;
     float: left;
@@ -91,7 +91,7 @@ nav a:hover{
     height: 40%;
 }
 
-.quarta{
+.quarta {
     border: solid;
     color: black;
     float: right;
@@ -101,7 +101,7 @@ nav a:hover{
     height: 40%;
 }
 
-footer{
+footer {
     border: solid;
     color: black;
     margin-bottom: 2%;
@@ -110,11 +110,11 @@ footer{
     float: right;
 }
 
-body{
-    margin:0;
+body {
+    margin: 0;
 }
 
-.login{
+.login {
     box-sizing: border-box;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 0px 2px rgba(0, 0, 0, 0.08);
     border-radius: 2px;
@@ -126,7 +126,7 @@ body{
     height: 200px;
 }
 
-.registrazione{
+.registrazione {
     box-sizing: border-box;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 0px 2px rgba(0, 0, 0, 0.08);
     border-radius: 2px;
@@ -138,7 +138,7 @@ body{
     height: 620px;
 }
 
-.accedi{
+.accedi {
     color: white;
     border-radius: 4px;
     padding: 4px 8px;
@@ -149,22 +149,22 @@ body{
     height: 20px;
 }
 
-.input{
+.input {
     border-style: solid;
     border-radius: 2px;
     width: 100%;
     outline: none;
 }
 
-.input:hover{
+.input:hover {
     border-color: #007763;
 }
 
-.accedi:hover{
+.accedi:hover {
     background-image: linear-gradient(#007763 0%, #009687 100%);
 }
 
-.completed{
+.completed {
     box-sizing: border-box;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 0px 2px rgba(0, 0, 0, 0.08);
     border-radius: 2px;
@@ -176,19 +176,19 @@ body{
     height: 220px;
 }
 
-.check_mark{
+.check_mark {
     float: right;
     height: 100px;
 }
 
-.utente_loggato{
+.utente_loggato {
 }
 
 .opzioni {
     display: none;
 }
 
-.down{
+.down {
     display: block;
     position: absolute;
     color: black;
@@ -198,20 +198,20 @@ body{
     padding-top: 2px;
 }
 
-div.opzioni a{
+div.opzioni a {
     text-decoration: none;
     padding: 12px 16px;
     display: block;
     color: black;
 }
 
-div.opzioni a:hover{
+div.opzioni a:hover {
     background-color: lightgrey;
     text-decoration: none;
     color: black;
 }
 
-.email_user{
+.email_user {
     border: none;
     background-color: white;
     color: black;
@@ -223,7 +223,7 @@ div.opzioni a:hover{
     margin-bottom: 0px;
 }
 
-.email_user:hover{
+.email_user:hover {
     border: none;
     background-color: #007763;
     color: white;
@@ -241,7 +241,7 @@ div.opzioni ul {
     max-width: 120px;
 }
 
-div.opzioni li{
+div.opzioni li {
     list-style: none;
     width: 100%;
     float: left;
@@ -250,7 +250,7 @@ div.opzioni li{
     color: black;
 }
 
-.carrello{
+.carrello {
     width: 35px;
     height: 32px;
     float: right;
@@ -279,27 +279,27 @@ div.cat2 {
     height: 30%;
 }
 
-div.cat2 img{
+div.cat2 img {
     width: 50%;
     height: 90%;
 }
 
-div.cat1 img{
+div.cat1 img {
     width: 50%;
     height: 100%;
 }
 
-div.cat1 *{
+div.cat1 * {
     display: inline-block;
     margin-left: 10px;
 }
 
-.three_hor_lines{
+.three_hor_lines {
     height: 18px;
     width: 18px;
 }
 
-ul.hamburger_menu{
+ul.hamburger_menu {
     background-color: #DBDCDB;
     display: none;
     width: 20%;
@@ -310,7 +310,7 @@ ul.hamburger_menu{
     position: absolute;
 }
 
-ul.hamburger_menu a{
+ul.hamburger_menu a {
     display: block;
     background-color: #DBDCDB;
     color: black;
@@ -326,24 +326,24 @@ ul.hamburger_menu a{
     top: 93%;
 }*/
 
-ul.hamburger_menu a:hover{
+ul.hamburger_menu a:hover {
     background-color: #D1D2D1;
 }
 
-ul.hamburger_menu_visible{
+ul.hamburger_menu_visible {
     display: block;
 }
 
-.posizione_corrente{
+.posizione_corrente {
     background-color: #007763;
     color: white;
 }
 
-.product{
+.product {
     display: flex;
 }
 
-.add_product{
+.add_product {
     width: 300px;
     height: 510px;
     border: solid 1px lightgrey;
@@ -351,7 +351,7 @@ ul.hamburger_menu_visible{
     margin-top: 20px;
 }
 
-.add_product_label{
+.add_product_label {
     text-align: center;
     background-color: #007763;
     color: white;
@@ -361,15 +361,15 @@ ul.hamburger_menu_visible{
     padding-bottom: 4px;
 }
 
-.add_product_input{
+.add_product_input {
     padding: 20px;
 }
 
-div.add_product_input input[type="submit"]{
+div.add_product_input input[type="submit"] {
     float: right;
 }
 
-.agg{
+.agg {
     color: white;
     border-radius: 4px;
     padding: 4px 8px;
@@ -380,11 +380,11 @@ div.add_product_input input[type="submit"]{
     height: 20px;
 }
 
-.agg:hover{
+.agg:hover {
     background-image: linear-gradient(#007763 0%, #009687 100%);
 }
 
-.rem_product{
+.rem_product {
     width: 300px;
     height: 165px;
     border: solid 1px lightgrey;
@@ -392,7 +392,7 @@ div.add_product_input input[type="submit"]{
     margin-top: 20px;
 }
 
-.rem_product_label{
+.rem_product_label {
     text-align: center;
     background-color: #007763;
     color: white;
@@ -402,15 +402,15 @@ div.add_product_input input[type="submit"]{
     padding-bottom: 4px;
 }
 
-.rem_product_input{
+.rem_product_input {
     padding: 20px;
 }
 
-div.rem_product_input input[type="submit"]{
+div.rem_product_input input[type="submit"] {
     float: right;
 }
 
-.mod_product{
+.mod_product {
     width: 300px;
     height: 570px;
     border: solid 1px lightgrey;
@@ -418,7 +418,7 @@ div.rem_product_input input[type="submit"]{
     margin-top: 20px;
 }
 
-.mod_product_label{
+.mod_product_label {
     text-align: center;
     background-color: #007763;
     color: white;
@@ -428,39 +428,45 @@ div.rem_product_input input[type="submit"]{
     padding-bottom: 4px;
 }
 
-.mod_product_input{
+.mod_product_input {
     padding: 20px;
 }
 
-div.mod_product_input input[type="submit"]{
+div.mod_product_input input[type="submit"] {
     float: right;
 }
 
 .rtable {
-    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
     vertical-align: top;
-    max-width: 100%;
-    width: 75%;
+    width: 960px;
+    height: 25px;
     overflow-x: auto;
     white-space: nowrap;
     border-collapse: collapse;
     border-spacing: 0;
 }
+
 .rtable {
     -webkit-overflow-scrolling: touch;
     background-size: 10px 100%, 10px 100%;
 }
+
 .rtable td:first-child {
     background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
     background-repeat: no-repeat;
     background-size: 20px 100%;
 }
+
 .rtable td:last-child {
     background-image: linear-gradient(to left, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
     background-repeat: no-repeat;
     background-position: 100% 0;
     background-size: 20px 100%;
 }
+
 .rtable th {
     font-size: 11px;
     text-align: left;
@@ -476,4 +482,57 @@ div.mod_product_input input[type="submit"]{
 
 table {
     margin-top: 30px;
+}
+
+body.admin {
+    background-color: #007Fcc;
+}
+
+.login_admin {
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 2px;
+    position: relative;
+    padding: 24px 24px 32px;
+    margin: 180px auto 24px;
+    width: 300px;
+    line-height: 25px;
+    min-width: 0;
+    height: 330px;
+}
+
+.accedi_admin {
+    color: white;
+    border-radius: 4px;
+    padding: 4px 8px;
+    min-height: 24px;
+    border: none;
+    background-image: linear-gradient(#57B5E0 0%, #007FCC 100%);
+    width: 100%;
+    height: 20px;
+}
+
+.accedi_admin:hover {
+    background-image: linear-gradient(#007FCC 0%, #57B5E0 100%);
+}
+
+.input_admin {
+    border-style: solid;
+    border-radius: 2px;
+    width: 100%;
+    outline: none;
+}
+
+.input_admin:hover {
+    border-color: #007FCC;
+}
+
+.login_admin p {
+    text-align: center;
+    font-family: Righteous, sans-serif;
+    text-transform: uppercase;
+}
+
+.login_admin hr {
+    color: lightgrey;
 }
