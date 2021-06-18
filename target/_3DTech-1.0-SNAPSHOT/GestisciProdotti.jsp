@@ -1,4 +1,4 @@
-
+<%@ page import="java.util.ArrayList" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
@@ -96,10 +96,7 @@
                     <input class="agg" type="submit" value="Rimuovi prodotto">
                 </form>
             </div>
-
         </div>
-
-
     </div>
 
     <table class="rtable">

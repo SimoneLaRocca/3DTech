@@ -2,6 +2,7 @@ package Controller;
 
 import Model.Utente;
 import Model.UtenteDAO;
+import org.json.JSONObject;
 
 import javax.servlet.*;
 import javax.servlet.http.*;

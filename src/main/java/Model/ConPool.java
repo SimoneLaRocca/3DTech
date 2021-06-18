@@ -40,16 +40,14 @@ import java.util.TimeZone;
 
 public class ConPool {
     private static DataSource datasource;
-
-
     public static Connection getConnection() throws SQLException {
         if (datasource == null) {
 
             PoolProperties p = new PoolProperties();
-            p.setUrl("jdbc:mysql://localhost:3306/progettoTSW?serverTimezone=" + TimeZone.getDefault().getID());
+            p.setUrl("jdbc:mysql://localhost:3306/3dtech_database?serverTimezone=" + TimeZone.getDefault().getID());
             p.setDriverClassName("com.mysql.cj.jdbc.Driver");
             p.setUsername("root");
-            p.setPassword("qazwsx");
+            p.setPassword("paone0000");
             p.setMaxActive(100);
             p.setInitialSize(10);
             p.setMinIdle(10);
