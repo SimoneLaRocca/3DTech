@@ -1,12 +1,7 @@
 package Controller;
 
-import Model.Categoria;
 import Model.CategoriaDAO;
-import Model.Utente;
-import Model.UtenteDAO;
 import org.json.JSONArray;
-import org.json.JSONObject;
-
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
@@ -19,12 +14,12 @@ public class ChartServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/json");
-        System.out.println("Sono stata chiamata");
         CategoriaDAO dao = new CategoriaDAO();
         List<Integer> test = dao.doCountCategories();
 
         JSONArray array = new JSONArray(test);
 
+        //Per scrivere nel body della response...
         PrintWriter writer = response.getWriter();
         writer.println(array);
         writer.close();

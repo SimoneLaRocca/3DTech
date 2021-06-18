@@ -15,11 +15,10 @@ public class CategoriaDAO {
              PreparedStatement stmt = connection.prepareStatement(query)) {
 
             ResultSet set = stmt.executeQuery();
-            System.out.println(set.getFetchSize());
-            while (set.next()) {
+
+            while (set.next())
                 list.add(set.getInt(1));
-            }
-            System.out.println(list);
+            
         } catch (SQLException e) {
             System.out.println("errore??");
             throw new RuntimeException(e);
