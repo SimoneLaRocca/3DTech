@@ -1,8 +1,6 @@
-
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-
 <head>
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>Admin Dashboard</title>
