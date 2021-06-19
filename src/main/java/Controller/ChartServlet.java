@@ -12,13 +12,17 @@ import java.util.List;
 @WebServlet(name = "ChartServlet", value = "/ChartServlet")
 public class ChartServlet extends HttpServlet {
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
         response.setContentType("text/json");
         CategoriaDAO dao = new CategoriaDAO();
-        List<Integer> test = dao.doCountCategories();
+        List<Integer> nums = dao.doCountCategories();
+        List<String> names = dao.doRetrieveCategoriesName();
 
-        JSONArray array = new JSONArray(test);
+        JSONArray array = new JSONArray();
 
+        array.put(0, names);
+        array.put(1, nums);
         //Per scrivere nel body della response...
         PrintWriter writer = response.getWriter();
         writer.println(array);
