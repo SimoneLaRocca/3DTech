@@ -116,7 +116,7 @@ body {
 
 .login {
     box-sizing: border-box;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 0px 2px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 0 2px rgba(0, 0, 0, 0.08);
     border-radius: 2px;
     position: relative;
     padding: 24px 24px 32px;
@@ -128,7 +128,7 @@ body {
 
 .registrazione {
     box-sizing: border-box;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 0px 2px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 0 2px rgba(0, 0, 0, 0.08);
     border-radius: 2px;
     position: relative;
     padding: 24px 24px 32px;
@@ -166,7 +166,7 @@ body {
 
 .completed {
     box-sizing: border-box;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 0px 2px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 0 2px rgba(0, 0, 0, 0.08);
     border-radius: 2px;
     position: relative;
     padding: 24px 24px 32px;
@@ -218,9 +218,7 @@ div.opzioni a:hover {
     text-align: center;
     text-decoration: none;
     padding: 8px;
-    margin-right: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 0;
 }
 
 .email_user:hover {
@@ -230,14 +228,12 @@ div.opzioni a:hover {
     text-align: center;
     text-decoration: none;
     padding: 8px;
-    margin-right: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 0;
 }
 
 div.opzioni ul {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     max-width: 120px;
 }
 
@@ -271,10 +267,7 @@ div.cat2 {
     border: solid;
     color: #007763;
     float: left;
-    margin-left: 2.5%;
-    margin-right: 7.5%;
-    margin-bottom: 2%;
-    margin-top: 2%;
+    margin: 2% 7.5% 2.5%;
     width: 40%;
     height: 30%;
 }
@@ -299,15 +292,22 @@ div.cat1 * {
     width: 18px;
 }
 
+@font-face {
+    font-family: "Orienta";
+    src: url("../font/Righteous-Regular.woff");
+}
+
 ul.hamburger_menu {
     background-color: #DBDCDB;
     display: none;
     width: 20%;
     height: 100%;
-    margin: 0px;
+    margin: 0;
+    overflow: hidden;
     list-style: none;
-    padding: 0px;
+    padding: 0;
     position: absolute;
+    max-height: 100vw;
 }
 
 ul.hamburger_menu a {
@@ -316,8 +316,8 @@ ul.hamburger_menu a {
     color: black;
     text-decoration: none;
     padding: 20px;
-    margin: 0px;
-    font-family: "Franklin Gothic Medium";
+    margin: 0;
+    font-family: "Franklin Gothic Medium", sans-serif;
     text-transform: uppercase;
 }
 
@@ -332,6 +332,7 @@ ul.hamburger_menu a:hover {
 
 ul.hamburger_menu_visible {
     display: block;
+    max-height: 100vw;
 }
 
 .posizione_corrente {
@@ -528,13 +529,13 @@ body.admin {
 }
 
 .login_admin p {
+    margin: 11px 0;
     text-align: center;
-    font-family: Righteous, sans-serif;
+    font-size: 22px;
+    font-family: "Orienta", sans-serif;
     text-transform: uppercase;
-}
-
-.login_admin hr {
-    color: lightgrey;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 7px;
 }
 
 .user{

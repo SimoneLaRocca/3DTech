@@ -16,30 +16,13 @@ public class CategoriaDAO {
 
             ResultSet set = stmt.executeQuery();
 
-            while (set.next()) {
+            while (set.next())
                 list.add(set.getInt(1));
-            }
-
+            
         } catch (SQLException e) {
-
+            System.out.println("errore??");
             throw new RuntimeException(e);
         }
         return list;
-    }
-
-    public List<String> doRetrieveCategoryNames() {
-        ArrayList<String> list = new ArrayList<>();
-        String sql = "SELECT nome FROM Categoria";
-        try (Connection connection = ConPool.getConnection();
-             PreparedStatement stmt = connection.prepareStatement(sql)) {
-
-            ResultSet set = stmt.executeQuery();
-            while (set.next()) {
-                list.add(set.getString(1));
-            }
-            return list;
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
     }
 }
