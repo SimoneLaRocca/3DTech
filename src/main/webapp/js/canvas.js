@@ -1,5 +1,4 @@
 $(document).ready(function () {
-        console.log("ciao")
         $.ajax({
             url: "/3DTech_war_exploded/ChartServlet",
             method: "POST",
@@ -8,10 +7,10 @@ $(document).ready(function () {
                 let myChart = new Chart(ctx, {
                     type: 'bar',
                     data: {
-                        labels: ['Stampante3D', 'Filamenti', 'Ricambi per stampanti', 'Resina', 'Accessori', 'Utensili'],
+                        labels: data.labels,
                         datasets: [{
                             label: '# scorte',
-                            data: data,
+                            data: data.info,
                             backgroundColor: [
                                 'rgba(255, 99, 132, 0.2)',
                                 'rgba(54, 162, 235, 0.2)',

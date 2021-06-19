@@ -8,7 +8,6 @@ public class Ordine {
     private Date dataOrdine;
     private Utente user;
 
-
     public Ordine() {
     }
 

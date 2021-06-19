@@ -26,9 +26,9 @@
     <ul class="hamburger_menu">
         <li><a href="${pageContext.request.contextPath}/GestisciProdotti.jsp">Gestisci prodotti</a></li>
         <!-- agg, elimina e modifica -->
-        <li><a href="#">Gestisci utenti</a></li>
-        <li><a href="#">Gestione ordini</a></li>
-        <li><a class="logout" href="#">Logout</a></li>
+        <li><a href="${pageContext.request.contextPath}/GestisciProdotti.jsp">Gestisci utenti</a></li>
+        <li><a href="${pageContext.request.contextPath}/GestisciProdotti.jsp">Gestione ordini</a></li>
+        <li><a class="${pageContext.request.contextPath}/GestisciProdotti.jsp" href="#">Logout</a></li>
     </ul>
 </aside>
 
