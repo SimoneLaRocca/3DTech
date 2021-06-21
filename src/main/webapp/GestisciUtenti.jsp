@@ -7,24 +7,7 @@
     <script defer src="js/hamburger.js"></script>
 </head>
 
-<nav>
-    <div class="barra_di_nav">
-        <a href="#"><img class="three_hor_lines" src="img/three_horizontal_lines_white.png"></a>
-        <div class="search">
-            <form>
-                <input type="search" name="search" placeholder="Cerca...">
-            </form>
-        </div>
-    </div>
-</nav>
-
-
-<ul class="hamburger_menu">
-    <li><a class="posizione_corrente" href="#">Gestisci prodotti</a></li> <!-- agg, elimina e modifica -->
-    <li><a href="#">Gestisci utenti</a></li>
-    <li><a href="#">Gestione ordini</a></li>
-    <li><a class="logout" href="#">Logout</a></li>
-</ul>
+<%@include file="WEB-INF/jsp/Hamburger.jsp"%>
 
 <div class="user">
 

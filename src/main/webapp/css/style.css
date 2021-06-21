@@ -598,3 +598,58 @@ canvas{
     padding: 100px;
 }
 
+.order{
+    display: flex;
+}
+
+.rem_order {
+    width: 300px;
+    height: 165px;
+    border: solid 1px lightgrey;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.rem_order_label {
+    text-align: center;
+    background-color: #007763;
+    color: white;
+    border: solid 1px lightgrey;
+    margin: 1px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.rem_order_input {
+    padding: 20px;
+}
+
+div.rem_order_input input[type="submit"] {
+    float: right;
+}
+
+.search_order_by_user {
+    width: 300px;
+    height: 165px;
+    border: solid 1px lightgrey;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.search_order_label {
+    text-align: center;
+    background-color: #007763;
+    color: white;
+    border: solid 1px lightgrey;
+    margin: 1px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.search_order_input {
+    padding: 20px;
+}
+
+div.search_order_input input[type="submit"] {
+    float: right;
+}

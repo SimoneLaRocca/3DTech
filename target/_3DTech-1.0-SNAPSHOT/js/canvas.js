@@ -1,6 +1,6 @@
 $(document).ready(function () {
         $.ajax({
-            url: "http://localhost:8080/3DTech_war_exploded/ChartServlet",
+            url: "/3DTech_war_exploded/ChartServlet",
             method: "POST",
             success: function (data) {
                 let ctx = document.getElementById('myChart').getContext('2d');

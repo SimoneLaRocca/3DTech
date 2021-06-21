@@ -1,33 +1,13 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: simon
-  Date: 16/06/2021
-  Time: 16:43
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>Gestisci Ordini</title>
+    <script defer src="js/hamburger.js"></script>
 </head>
 <body>
-<nav>
-    <div class="barra_di_nav">
-        <a href="#"><img class="three_hor_lines" src="img/three_horizontal_lines_white.png"></a>
-        <div class="search">
-            <form>
-                <input type="search" name="search" placeholder="Cerca...">
-            </form>
-        </div>
-    </div>
-</nav>
-
-<ul class="hamburger_menu">
-    <li><a class="posizione_corrente" href="#">Gestisci prodotti</a></li> <!-- agg, elimina e modifica -->
-    <li><a href="#">Gestisci utenti</a></li>
-    <li><a href="#">Gestione ordini</a></li>
-    <li><a class="logout" href="#">Logout</a></li>
-</ul>
+<%@include file="WEB-INF/jsp/Hamburger.jsp"%>
 
 <div class="order">
     <div class="search_order_by_user">
@@ -71,7 +51,7 @@
     </tr>
     </thead>
     <tbody>
-    <c:forEach items="${applicationScope.listOrders}" var="order">
+    <c:forEach items="${applicationScope.listOrders}" var="order"> <!-- todo:aggiungere listOrders in applicationScope -->
         <tr>
             <td>${order.id}</td>
             <td>${order.quantita}</td>

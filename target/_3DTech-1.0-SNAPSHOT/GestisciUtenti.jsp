@@ -1,32 +1,13 @@
-
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-
 <head>
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>Admin Dashboard</title>
     <script defer src="js/hamburger.js"></script>
 </head>
 
-<nav>
-    <div class="barra_di_nav">
-        <a href="#"><img class="three_hor_lines" src="img/three_horizontal_lines_white.png"></a>
-        <div class="search">
-            <form>
-                <input type="search" name="search" placeholder="Cerca...">
-            </form>
-        </div>
-    </div>
-</nav>
-
-
-<ul class="hamburger_menu">
-    <li><a class="posizione_corrente" href="#">Gestisci prodotti</a></li> <!-- agg, elimina e modifica -->
-    <li><a href="#">Gestisci utenti</a></li>
-    <li><a href="#">Gestione ordini</a></li>
-    <li><a class="logout" href="#">Logout</a></li>
-</ul>
+<%@include file="WEB-INF/jsp/Hamburger.jsp"%>
 
 <div class="user">
 
@@ -71,7 +52,6 @@
         <tr>
             <th>id</th>
             <th>email</th>
-            <th>password</th>
             <th>nome</th>
             <th>cognome</th>
             <th>telefono</th>
@@ -86,7 +66,6 @@
             <tr>
                 <td>${user.id}</td>
                 <td>${user.email}</td>
-                <td>${user.passwordhash}</td>
                 <td>${user.name}</td>
                 <td>${user.surname}</td>
                 <td>${user.phoneNumber}</td>
