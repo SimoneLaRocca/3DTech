@@ -8,7 +8,7 @@
 <body>
     <%@include file="NavigationBar.jsp"%>
     <div class="login">
-    <form action="${contextPath}LoginServlet" method="post">
+    <form action="${pageContext.request.contextPath}/LoginServlet" method="post">
         <label for="email">Email</label>
         <input class="input" type="email" id="email" name="email" value=""><br><br>
         <label for="password">Password</label>

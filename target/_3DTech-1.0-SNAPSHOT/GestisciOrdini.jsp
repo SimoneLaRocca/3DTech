@@ -51,7 +51,7 @@
     </tr>
     </thead>
     <tbody>
-    <c:forEach items="${applicationScope.listOrders}" var="order">
+    <c:forEach items="${applicationScope.listOrders}" var="order"> <!-- todo:aggiungere listOrders in applicationScope -->
         <tr>
             <td>${order.id}</td>
             <td>${order.quantita}</td>

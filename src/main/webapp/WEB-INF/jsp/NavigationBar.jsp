@@ -1,15 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<html>
-<head>
-    <link rel="stylesheet" href="../../css/style.css" type="text/css">
-    <title>3DTech</title>
-    <script src="js/user_logged.js" defer></script>
-</head>
-<body>
 <c:set value="${pageContext.request.contextPath}/" scope="page" var="contextPath"/>
 <header>
-
     <c:if test="${sessionScope.user == null}">
         <div class="accesso">
             <a href="${contextPath}Registrazione.jsp">Registrati</a>
@@ -49,7 +41,4 @@
     </ul>
 
 </nav>
-
-</body>
-</html>
 

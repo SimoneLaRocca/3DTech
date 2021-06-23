@@ -1,7 +1,3 @@
-header {
-    float: right;
-    display: flex;
-}
 
 .accesso {
     float: right;
@@ -36,7 +32,7 @@ header {
     padding: 0;
     overflow: hidden;
     background-color: #007763;
-    width: 100%;
+    width: 100vw;
 }
 
 nav a {
@@ -231,13 +227,13 @@ div.opzioni a:hover {
     margin: 0;
 }
 
-div.opzioni ul {
+.opzioni ul {
     padding: 0;
     margin: 0;
     max-width: 120px;
 }
 
-div.opzioni li {
+.opzioni li {
     list-style: none;
     width: 100%;
     float: left;
@@ -250,41 +246,6 @@ div.opzioni li {
     width: 35px;
     height: 32px;
     float: right;
-}
-
-div.cat1 {
-    border: solid;
-    color: #007763;
-    float: left;
-    margin-left: 7.5%;
-    margin-bottom: 2%;
-    margin-top: 2%;
-    width: 40%;
-    height: 30%;
-}
-
-div.cat2 {
-    border: solid;
-    color: #007763;
-    float: left;
-    margin: 2% 7.5% 2.5%;
-    width: 40%;
-    height: 30%;
-}
-
-div.cat2 img {
-    width: 50%;
-    height: 90%;
-}
-
-div.cat1 img {
-    width: 50%;
-    height: 100%;
-}
-
-div.cat1 * {
-    display: inline-block;
-    margin-left: 10px;
 }
 
 .three_hor_lines {
@@ -366,7 +327,7 @@ ul.hamburger_menu_visible {
     padding: 20px;
 }
 
-div.add_product_input input[type="submit"] {
+.add_product_input input[type="submit"] {
     float: right;
 }
 
@@ -485,7 +446,7 @@ table {
     margin-top: 30px;
 }
 
-body.admin {
+.admin {
     background-color: #007FCC;
 }
 
@@ -652,4 +613,70 @@ div.rem_order_input input[type="submit"] {
 
 div.search_order_input input[type="submit"] {
     float: right;
+}
+div.cat1 {
+    background-color: white;
+    height: 200px;
+    width: 400px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    margin-left: 5%;
+}
+
+div.cat2 {
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+div.cat3 {
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+div.cat4 {
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    margin-right: 15px;
+    margin-left: 5%;
+}
+
+div.cat5 {
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    margin-right: 15px;
+}
+
+div.cat6 {
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    margin-right: 15px;
+}
+
+.cat1 img, .cat2 img, .cat3 img, .cat4 img, .cat5 img, .cat6 img {
+    width: 200px;
+    height: 200px;
+}
+
+.category{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: #BAE8D9;
+    padding: 20px;
+}
+
+.text_category_1{
+    vertical-align: top;
+    font-family: Arial, "sans-serif";
+    font-weight: bold;
 }
