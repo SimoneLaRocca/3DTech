@@ -54,6 +54,7 @@ div.cat6 {
     flex-direction: row;
     flex-wrap: wrap;
     position: relative;
+    min-width: 400px;
     background-color: #BAE8D9;
     padding: 20px;
 }

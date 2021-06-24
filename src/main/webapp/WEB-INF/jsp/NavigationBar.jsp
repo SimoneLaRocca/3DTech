@@ -3,10 +3,10 @@
 <c:set value="${pageContext.request.contextPath}/" scope="page" var="contextPath"/>
 <header>
     <c:if test="${sessionScope.user == null}">
-        <div class="accesso">
+        <span class="accesso clearfix">
             <a href="${contextPath}Registrazione.jsp">Registrati</a>
             <a href="${contextPath}Login.jsp">Login</a>
-        </div>
+        </span>
     </c:if>
 
     <c:if test="${sessionScope.user != null}"> <!--pageContext.request.getSession().getAttribute('user') != null -->
