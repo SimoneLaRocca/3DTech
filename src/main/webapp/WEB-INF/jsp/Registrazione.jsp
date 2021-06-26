@@ -34,5 +34,6 @@
         <input class="accedi" type="submit" name="Submit" value="Registrati">
     </form>
     </div>
+    <%@include file="WEB-INF/jsp/Footer.jsp" %>
 </body>
 </html>

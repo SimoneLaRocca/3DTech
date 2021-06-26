@@ -6,7 +6,6 @@
 </head>
 <body>
         <%@include file="WEB-INF/jsp/NavigationBar.jsp"%>
-
     <section class="prima">
         Sconti
     </section>
@@ -19,5 +18,6 @@
     <section class="quarta">
         Recenti
     </section>
+        <%@include file="WEB-INF/jsp/Footer.jsp" %>
 </body>
 </html>

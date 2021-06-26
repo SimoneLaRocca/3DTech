@@ -3,7 +3,6 @@
 <head>
     <link rel="stylesheet" href="./css/style.css" type="text/css">
     <title>Login</title>
-
 </head>
 <body>
     <%@include file="NavigationBar.jsp"%>
@@ -16,5 +15,6 @@
         <input class="accedi" type="submit" name="Submit" value="Accedi">
     </form><br>
     </div>
+    <%@include file="Footer.jsp"%>
 </body>
 </html>
