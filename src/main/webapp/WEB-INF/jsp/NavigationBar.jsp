@@ -1,5 +1,4 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
 <c:set value="${pageContext.request.contextPath}/" scope="page" var="contextPath"/>
 <header>
     <c:if test="${sessionScope.user == null}">
@@ -34,8 +33,12 @@
         <li><a href="#">Contatti</a> </li>
         <li><div class="search">
             <form>
-                <input type="search" name="search" placeholder="Cerca...">
+                <input type="text" name="search" placeholder="Cerca...">
             </form>
+            <ul id="listResults" class="opzioni">
+                <li>aaaa</li>
+                <li>bbbbb</li>
+            </ul>
         </div>
         </li>
     </ul>

@@ -19,29 +19,6 @@ public class ProdottoDAO {
         }
     }
 
-    public void doSaveJson(String s) { // ??
-        try (PreparedStatement ps = con.prepareStatement("INSERT INTO test VALUE(?)")) {
-            ps.setString(1, s);
-            if (ps.executeUpdate() != 1) throw new RuntimeException();
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    public String doRetrieveJson() { // ??
-        String s = "";
-        try (PreparedStatement ps = con.prepareStatement("SELECT * from test WHERE json_column->'$.name' = ?")) {
-            ps.setString(1, "gigi");
-            ResultSet set = ps.executeQuery();
-            while (set.next()) {
-                s = set.getString("json_column");
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return s;
-    }
-
     public List<Prodotto> doRetrieveAll() {
         String sql = "SELECT * FROM Prodotto";
         try (PreparedStatement ps = con.prepareStatement(sql)) {
@@ -57,6 +34,25 @@ public class ProdottoDAO {
                 p.setPrezzo(rs.getDouble(5));
                 p.setPeso(rs.getDouble(6));
                 p.setSconto(rs.getDouble(7));
+                array.add(p);
+            }
+            return array;
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public List<Prodotto> doRetrievebyName(String name) {
+        String sql = "SELECT * FROM Prodotto WHERE nome LIKE ? ";
+        try (PreparedStatement ps = con.prepareStatement(sql)) {
+            ps.setString(1, name + "%");
+            ResultSet rs = ps.executeQuery();
+
+            ArrayList<Prodotto> array = new ArrayList<>();
+            while (rs.next()) {
+                Prodotto p = new Prodotto();
+                p.setId(rs.getInt(1));
+                p.setNome(rs.getString(2));
                 array.add(p);
             }
             return array;

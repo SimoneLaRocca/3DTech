@@ -70,6 +70,10 @@ public class Prodotto {
         return sconto;
     }
 
+    public String toString() {
+        return nome;
+    }
+
     public void setSconto(double sconto) {
         this.sconto = sconto;
     }

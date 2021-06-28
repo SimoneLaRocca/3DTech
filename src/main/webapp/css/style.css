@@ -687,10 +687,21 @@ footer {
 }
 
 .flex-container a{
-    font-family: Arial;
+    font-family: Arial, sans-serif;
 }
 
 .flex-container a:hover{
     text-decoration: underline;
     cursor: pointer;
+}
+
+.bar_advice{
+    display: block;
+    position: relative;
+    top: 0;
+    color: black;
+    background-color: #f8f8f8;
+    padding-left: 2px;
+    padding-bottom: 2px;
+    padding-top: 2px;
 }

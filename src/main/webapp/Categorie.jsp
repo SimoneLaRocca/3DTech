@@ -3,7 +3,9 @@
 <head>
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
+    <script defer src="js/bar_advices.js"></script>
     <!--<link rel="stylesheet" href="css/normalize.css" type="text/css">-->
     <title>Categorie</title>
 </head>
