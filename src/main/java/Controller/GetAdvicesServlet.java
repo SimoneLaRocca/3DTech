@@ -22,7 +22,6 @@ public class GetAdvicesServlet extends HttpServlet {
         JSONArray jarray = new JSONArray(list);
         response.setContentType("application/json");
         response.getWriter().println(jarray);
-
     }
 
     @Override

@@ -2,16 +2,16 @@
 <c:set value="${pageContext.request.contextPath}/" scope="page" var="contextPath"/>
 <header>
     <c:if test="${sessionScope.user == null}">
-        <span class="accesso clearfix">
+        <div class="accesso">
             <a href="${contextPath}Registrazione.jsp">Registrati</a>
             <a href="${contextPath}Login.jsp">Login</a>
-        </span>
+        </div>
     </c:if>
 
     <c:if test="${sessionScope.user != null}"> <!--pageContext.request.getSession().getAttribute('user') != null -->
         <div class="utente_loggato">
             <button class="email_user">${sessionScope.user.email}</button>
-            <a href="#pagina_carello">
+            <a href="#pagina_carrello">
                 <img class="carrello" src="${contextPath}img/carrello.png">
             </a>
             <div class="opzioni">
@@ -33,15 +33,11 @@
         <li><a href="#">Contatti</a> </li>
         <li><div class="search">
             <form>
-                <input type="text" name="search" placeholder="Cerca...">
+                <input id="search_bar" type="text" name="search" placeholder="Cerca...">
             </form>
-            <ul id="listResults" class="opzioni">
-                <li>aaaa</li>
-                <li>bbbbb</li>
-            </ul>
         </div>
         </li>
     </ul>
-
 </nav>
+
 
