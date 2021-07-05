@@ -32,9 +32,7 @@
         <li><a href="#">Chi Siamo</a> </li>
         <li><a href="#">Contatti</a> </li>
         <li><div class="search">
-            <form>
-                <input id="search_bar" type="text" name="search" placeholder="Cerca...">
-            </form>
+                <input class="search_bar" type="text" name="search" placeholder="Cerca...">
         </div>
         </li>
     </ul>

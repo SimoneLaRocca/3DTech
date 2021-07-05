@@ -17,7 +17,7 @@ public class GetAdvicesServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         ProdottoDAO pDAO = new ProdottoDAO();
-        String s = request.getParameter("input_bar");
+        String s = request.getParameter("input_bar_value");
         ArrayList<Prodotto> list = (ArrayList<Prodotto>) pDAO.doRetrievebyName(s);
         JSONArray jarray = new JSONArray(list);
         response.setContentType("application/json");

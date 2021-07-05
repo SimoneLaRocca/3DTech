@@ -20,11 +20,11 @@
 
 </head>
 <body>
-<%@include file="WEB-INF/jsp/NavigationBar.jsp"%>
+<%@include file="WEB-INF/jsp/NavigationBar.jsp" %>
 <div class="home">
     <div class="best_products">
         <div class="printer">
-            <div class="label_printer">Migliori stampanti 3D</div>
+            <span class="label_printer">Migliori stampanti 3D</span>
             <div class="best_choice">
                 <img src="img/test/favpng_hewlett-packard-enterprise-printer-managed-print-services.png">
                 <span>1. Nome Prodotto Numero 1</span>
@@ -39,7 +39,7 @@
             </div>
         </div>
         <div class="brands">
-            <div class="label_brands">Migliori marchi 2021</div>
+            <span class="label_brands">Migliori marchi 2021</span>
             <div class="best_choice">
                 <img src="img/brands/kisspng-intel-dell-logo-business-computer-icons-intel-logo-5b3f706848fc28.452094801530884200299.png">
                 <span>1. Nome primo marchio</span>
@@ -56,29 +56,32 @@
     </div>
 </div>
 
+<!--
 <div class="sconti">
-    <div class="label_sconti">Sconti</div>
-    <div class="slider">
-        <div>
-            <img src="img/test/favpng_3d-printing-filament-aleph-objects-printer.png">
-            <span>Nome Prodotto Numero 1</span>
-        </div>
-        <div>
-            <img src="img/test/favpng_hewlett-packard-enterprise-printer-managed-print-services.png">
-            <span>Nome Prodotto Numero 2</span>
-        </div>
-        <div>
-            <img src="img/categorie/stampante3d.png">
-            <span>Nome Prodotto Numero 3</span>
-        </div>
-        <div>
-            <img src="img/categorie/filamenti.png">
-            <span>Nome Prodotto Numero 4</span>
+    <div class="content">
+        <div class="label_sconti">Sconti</div>
+        <div class="slider">
+            <div>
+                <img src="img/test/favpng_3d-printing-filament-aleph-objects-printer.png">
+                <span>Nome Prodotto Numero 1</span>
+            </div>
+            <div>
+                <img src="img/test/favpng_hewlett-packard-enterprise-printer-managed-print-services.png">
+                <span>Nome Prodotto Numero 2</span>
+            </div>
+            <div>
+                <img src="img/categorie/stampante3d.png">
+                <span>Nome Prodotto Numero 3</span>
+            </div>
+            <div>
+                <img src="img/categorie/filamenti.png">
+                <span>Nome Prodotto Numero 4</span>
+            </div>
         </div>
     </div>
-</div>
-</div>
+</div>-->
 
+<%@include file="WEB-INF/jsp/Footer.jsp" %>
 
 </body>
 </html>

@@ -58,6 +58,7 @@ nav a:hover {
     margin-right: 5%;
     border: none;
     float: right;
+    margin-top: 15px;
 }
 
 .prima {
@@ -687,77 +688,82 @@ footer {
     box-sizing: border-box;
 }
 
-.flex-container a{
+.flex-container a {
     font-family: Arial, sans-serif;
 }
 
-.flex-container a:hover{
+.flex-container a:hover {
     text-decoration: underline;
     cursor: pointer;
 }
 
-.home>div{
-    float: left;
-}
-
-.best_products>div{
-    width: 698px;
-    height: 300px;
-    border: solid 1px lightgrey;
-    min-width: 350px;
+.home {
     margin: 30px;
 }
 
-.best_products{
+.best_products > div {
+    width: 50%;
+    height: 300px;
+    border: solid 1px lightgrey;
+    /*margin: 30px;*/
+}
+
+.best_products {
     display: flex;
+    gap: 50px;
+    justify-content: center;
 }
 
-.printer .best_choice, .brands .best_choice{
+.printer .best_choice, .brands .best_choice {
     display: inline-block;
-    width: 200px;
+    width: min-content;
     height: 200px;
-    margin: 30px 15px;
+    margin: 0;
 }
 
-.printer .label_printer, .brands .label_brands{
+.printer div{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.printer .label_printer, .brands .label_brands {
     text-align: center;
     background-color: #00B5E2;
     color: white;
     text-transform: uppercase;
-    border: solid 1px lightgrey;
-    margin: 1px;
+    margin: 0;
     padding-top: 4px;
     padding-bottom: 4px;
 }
 
-.printer img{
+.best_products img {
     background-color: #81beff;
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
 }
 
-.brands img{
+/*
+.brands img {s
     background-color: #f1f1f1;
     width: 200px;
     height: 200px;
-}
+}*/
 
-.printer span, .brands span{
+.printer span, .brands span {
     display: block;
-    position: relative;
-    left: 5px;
-    font-family: "Linux Biolinum G";
+    font-family: "Linux Biolinum G", sans-serif;
 }
 
 /* Slick */
 
-.sconti{
-    float: left;
+.sconti {
+    display: flex;
     border: solid 2px lightgrey;
     width: 95%;
     min-width: 464px;
     height: 400px;
-    margin: 30px 30px 0px 30px;
+    margin: 30px 30px 0;
 }
 
 .label_sconti {
@@ -771,22 +777,28 @@ footer {
     padding-bottom: 4px;
 }
 
-.sconti img{
+.sconti img {
     width: 350px;
     height: 350px;
 }
 
-.sconti span{
+.sconti span {
     position: relative;
     left: 5px;
     font-family: "Linux Biolinum G";
 }
 
-.slider img{
+.slider img {
     background-color: #57B5E0;
 }
 
-.slick-slide{
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.slick-slide {
     height: auto;
 }
 
