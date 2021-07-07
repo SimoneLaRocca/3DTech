@@ -1,10 +1,8 @@
 package Controller;
 
-import Model.CategoriaDAO;
-import Model.Prodotto;
-import Model.ProdottoDAO;
+import Model.Prodotto.Prodotto;
+import Model.Prodotto.ProdottoDAO;
 import org.json.JSONArray;
-import org.json.JSONObject;
 
 import javax.servlet.*;
 import javax.servlet.http.*;

@@ -1,8 +1,7 @@
 package Controller;
 
-import Model.Utente;
-import Model.UtenteDAO;
-import org.json.JSONObject;
+import Model.Utente.Utente;
+import Model.Utente.UtenteDAO;
 
 import javax.servlet.*;
 import javax.servlet.http.*;

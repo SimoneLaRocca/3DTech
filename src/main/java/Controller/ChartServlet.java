@@ -1,6 +1,6 @@
 package Controller;
 
-import Model.CategoriaDAO;
+import Model.Categoria.CategoriaDAO;
 import org.json.JSONArray;
 import javax.servlet.*;
 import javax.servlet.http.*;

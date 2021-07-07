@@ -55,10 +55,10 @@ nav a:hover {
 .search input {
     outline: none;
     width: 25%;
-    margin-right: 5%;
+    margin: 0 5% 0 0;
     border: none;
     float: right;
-    margin-top: 15px;
+    padding: 0;
 }
 
 .prima {
@@ -662,8 +662,8 @@ div.search_order_input input[type="submit"] {
 }
 
 html, body {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 
 .flex-container {
@@ -702,30 +702,40 @@ footer {
 }
 
 .best_products > div {
-    width: 50%;
-    height: 300px;
+    width: 48%;
+    min-width: 466px;
+    height: 270px;
     border: solid 1px lightgrey;
     /*margin: 30px;*/
 }
 
 .best_products {
     display: flex;
+    flex-wrap: wrap;
     gap: 50px;
     justify-content: center;
 }
 
 .printer .best_choice, .brands .best_choice {
     display: inline-block;
-    width: min-content;
+    width: 200px;
     height: 200px;
-    margin: 0;
+    margin: 15px 15px 0px 15px;
+}
+
+@media screen and (max-width: 1510px){
+    .best_products > div {
+        width: 500px;
+        height: 460px;
+        border: solid 1px lightgrey;
+        /*margin: 30px;*/
+    }
 }
 
 .printer div{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
-
 
 .printer .label_printer, .brands .label_brands {
     text-align: center;
@@ -739,16 +749,9 @@ footer {
 
 .best_products img {
     background-color: #81beff;
-    width: 160px;
-    height: 160px;
+    width: 180px;
+    height: 180px;
 }
-
-/*
-.brands img {s
-    background-color: #f1f1f1;
-    width: 200px;
-    height: 200px;
-}*/
 
 .printer span, .brands span {
     display: block;
@@ -763,7 +766,7 @@ footer {
     width: 95%;
     min-width: 464px;
     height: 400px;
-    margin: 30px 30px 0;
+    margin: 30px 30px;
 }
 
 .label_sconti {

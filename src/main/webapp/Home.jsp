@@ -56,7 +56,7 @@
     </div>
 </div>
 
-<!--
+
 <div class="sconti">
     <div class="content">
         <div class="label_sconti">Sconti</div>
@@ -79,7 +79,7 @@
             </div>
         </div>
     </div>
-</div>-->
+</div>
 
 <%@include file="WEB-INF/jsp/Footer.jsp" %>
 

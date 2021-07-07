@@ -1,7 +1,7 @@
 package Controller;
 
-import Model.Utente;
-import Model.UtenteDAO;
+import Model.Utente.Utente;
+import Model.Utente.UtenteDAO;
 
 import javax.servlet.*;
 import javax.servlet.http.*;

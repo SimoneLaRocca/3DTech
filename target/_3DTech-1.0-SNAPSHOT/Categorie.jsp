@@ -17,32 +17,32 @@
 <%@include file="WEB-INF/jsp/NavigationBar.jsp" %>
 <section class="category">
     <div class="cat">
-        <a href="#"><img src="img/categorie/stampante3d.png"></a>
+        <a href="${contextPath}/VisualizzazioneProdottiServlet?option=stampanti"><img src="img/categorie/stampante3d.png"></a>
         <span class="text_category category_label">Stampanti 3D</span>
     </div>
 
     <div class="cat">
-        <a href="#"><img src="img/categorie/ricambi.png"></a>
+        <a href="${contextPath}/VisualizzazioneProdottiServlet?option=ricambi"><img src="img/categorie/ricambi.png"></a>
         <span class="text_category category_label">Ricambi</span>
     </div>
 
     <div class="cat">
-        <a href="#"><img src="img/categorie/filamenti.png"></a>
+        <a href="${contextPath}/VisualizzazioneProdottiServlet?option=filamenti"><img src="img/categorie/filamenti.png"></a>
         <span class="text_category category_label">Filamenti</span>
     </div>
 
     <div class="cat">
-        <a href="#"><img src="img/categorie/resina.png"></a>
+        <a href="${contextPath}/VisualizzazioneProdottiServlet?option=resina"><img src="img/categorie/resina.png"></a>
         <span class="text_category category_label">Resina</span>
     </div>
 
     <div class="cat">
-        <a href="#"><img src="img/categorie/utility.png"></a>
+        <a href="${contextPath}/VisualizzazioneProdottiServlet?option=utensili"><img src="img/categorie/utility.png"></a>
         <span class="text_category category_label">Utensili</span>
     </div>
 
     <div class="cat">
-        <a href="#"><img src="img/categorie/accessori.png"></a>
+        <a href="${contextPath}/VisualizzazioneProdottiServlet?option=accessori"><img src="img/categorie/accessori.png"></a>
         <span class="text_category category_label">Accessori</span>
     </div>
 </section>
