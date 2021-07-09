@@ -85,11 +85,11 @@ public class UtenteDAO {
 
             if (set.next()) {
                 Utente utente = new Utente();
+                utente.setId(set.getInt("id_utente"));
                 utente.setEmail(set.getString("email"));
                 utente.setName(set.getString("nome"));
                 utente.setSurname(set.getString("cognome"));
                 utente.setPhoneNumber(set.getString("telefono"));
-                utente.setId(set.getInt("id"));
                 utente.setCity(set.getString("citta"));
                 utente.setZIPCode(set.getString("CAP"));
                 utente.setStreet(set.getString("via"));

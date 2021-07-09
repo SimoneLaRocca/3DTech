@@ -33,7 +33,7 @@
                 </a>
                 <span>Nome: <c:out value="${product.nome}"/></span>
                 <span>Prezzo: <c:out value="${product.prezzo}"/></span>
-                <form action="" method="post"> <!-- servlet da definire -->
+                <form action="${contextPath}/AddProductToCartServlet?product=${product.id}" method="post"> <!-- servlet da definire -->
                     <button>Aggiungi al carrello</button>
                 </form>
             </div>

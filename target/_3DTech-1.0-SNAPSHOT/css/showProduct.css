@@ -82,7 +82,6 @@
 .main {
     display: flex;
     width: 100%;
-    min-width: 640px;
 }
 
 .left_menu #label-categories {

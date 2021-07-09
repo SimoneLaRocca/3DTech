@@ -18,14 +18,14 @@
         <input class="input" type="text" id="nome" name="nome" value=""><br><br>
         <label for="cognome">Cognome</label>
         <input class="input" type="text" id="cognome" name="cognome" value=""><br><br>
-
+        <label for="data_nascita">Data di nascita</label>
+        <input class="input" type="date" id="data_nascita" name="data_nascita" value=""><br><br>
         <label for="telefono">Telefono</label>
         <input class="input" type="tel" id="telefono" name="telefono" value=""><br><br>
         <label for="indirizzo">Indirizzo</label>
         <input class="input" type="text" id="indirizzo" name="indirizzo" value=""><br><br>
         <label for="citta">Città</label>
         <input class="input" type="text" id="citta" name="citta" value=""><br><br>
-
         <label for="cap">CAP</label>
         <input class="input" type="text" id="cap" name="cap" value=""><br><br>
         <label for="password">Password</label>
@@ -34,6 +34,6 @@
         <input class="accedi" type="submit" name="Submit" value="Registrati">
     </form>
     </div>
-    <%@include file="WEB-INF/jsp/Footer.jsp" %>
+
 </body>
 </html>

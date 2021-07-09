@@ -9,6 +9,7 @@
 <meta name="theme-color" content="#65863B">
 <link rel="apple-touch-icon" href="">
 <link rel="apple-touch-startup-image" href="">
+<link rel="stylesheet" href="css/style.css" type="text/css">
 <link rel="stylesheet" href="${contextPath}/css/normalize.css" type="text/css">
 <link rel="stylesheet" href="${contextPath}/css/cssprogetto/lib.css" type="text/css">
 <link rel="icon" type="image/x-icon" href="${contextPath}/imgs/favicon.ico">

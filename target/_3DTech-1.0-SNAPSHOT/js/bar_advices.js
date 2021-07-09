@@ -1,4 +1,4 @@
-
+/*
 let input_bar = document.querySelector(".search_bar")
 input_bar.addEventListener("input", function (event){
         $.post("/3DTech_war_exploded/GetAdvicesServlet",
@@ -12,6 +12,11 @@ input_bar.addEventListener("input", function (event){
             }
         )
 })
+*/
 
-
+$(".search_bar").autocomplete({
+    source: ["cioa", "cane", "gatto"],
+    autofocus: true,
+    delay: 100
+})
 

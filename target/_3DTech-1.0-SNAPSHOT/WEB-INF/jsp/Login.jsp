@@ -1,13 +1,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <%@include file="common.jsp"%>
     <title>Login</title>
 </head>
 <body>
     <%@include file="NavigationBar.jsp"%>
     <div class="login">
-    <form action="${pageContext.request.contextPath}/LoginServlet" method="post">
+    <form action="${contextPath}/LoginServlet" method="post">
         <label for="email">Email</label>
         <input class="input" type="email" id="email" name="email" value=""><br><br>
         <label for="password">Password</label>

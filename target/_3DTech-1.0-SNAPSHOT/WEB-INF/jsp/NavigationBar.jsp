@@ -3,8 +3,8 @@
 <header>
     <c:if test="${sessionScope.user == null}">
         <div class="accesso">
-            <a href="${contextPath}/Registrazione.jsp">Registrati</a>
-            <a href="${contextPath}/Login.jsp">Login</a>
+            <a href="${contextPath}/RegistrazioneServlet">Registrati</a>
+            <a href="${contextPath}/LoginServlet">Login</a>
         </div>
     </c:if>
 

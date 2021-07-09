@@ -11,7 +11,7 @@
         <p>Registrazione completata!</p>
         <img class="check_mark" src="../../img/check_mark.png">
     </div>
-    <%@include file="WEB-INF/jsp/Footer.jsp" %>
+    <%@include file="Footer.jsp" %>
 
 </body>
 </html>
