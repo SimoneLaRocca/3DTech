@@ -7,6 +7,7 @@ import java.util.List;
 public class Categoria {
     private int id;
     private String nome;
+    private String urlImage;
     private List<Prodotto> prodotti;
 
     public int getId() {
@@ -31,5 +32,13 @@ public class Categoria {
 
     public void setProdotti(List<Prodotto> prodotti) {
         this.prodotti = prodotti;
+    }
+
+    public String getUrlImage() {
+        return urlImage;
+    }
+
+    public void setUrlImage(String urlImage) {
+        this.urlImage = urlImage;
     }
 }

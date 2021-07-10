@@ -6,6 +6,7 @@ import java.math.BigInteger;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.sql.Date;
 import java.util.List;
 
 public class Utente {
@@ -14,6 +15,7 @@ public class Utente {
     private String passwordhash;
     private String name;
     private String surname;
+    private Date dataNascita;
     private String phoneNumber;
     private String ZIPCode;
     private String city;
@@ -23,6 +25,14 @@ public class Utente {
 
     public List<Ordine> getOrdini() {
         return ordini;
+    }
+
+    public Date getDataNascita() {
+        return dataNascita;
+    }
+
+    public void setDataNascita(Date dataNascita) {
+        this.dataNascita = dataNascita;
     }
 
     public void setOrdini(List<Ordine> ordini) {
@@ -49,11 +59,12 @@ public class Utente {
         return passwordhash;
     }
 
-    public void setPasswordhash(String passwordhash) {
+    public void setPasswordhash(String password) {
         try {
-            MessageDigest digest = MessageDigest.getInstance("SHA-1");
+            MessageDigest digest =
+                    MessageDigest.getInstance("SHA-1");
             digest.reset();
-            digest.update(passwordhash.getBytes(StandardCharsets.UTF_8));
+            digest.update(password.getBytes(StandardCharsets.UTF_8));
             this.passwordhash = String.format("%040x", new
                     BigInteger(1, digest.digest()));
         } catch (NoSuchAlgorithmException e) {

@@ -80,7 +80,7 @@
             <c:out value="Totale: ${sessionScope.sessionCart.getTotal()} €"/>
         </div>
         <div class="make_order">
-            <form action="" method="post">
+            <form action="${contextPath}/order/checkout" method="post">
                 <input class="order_button" type="submit" name="order" value="Ordina">
             </form>
         </div>

@@ -1,4 +1,4 @@
-package Model;
+package Model.utilities;
 
 import Model.Prodotto.Prodotto;
 

@@ -1,8 +1,7 @@
 package Controller;
 
-import Model.Cart;
-import Model.CartItem;
-import Model.Prodotto.Prodotto;
+import Model.utilities.Cart;
+import Model.utilities.CartItem;
 import Model.Utente.Utente;
 import Model.Utente.UtenteDAO;
 
@@ -26,8 +25,9 @@ public class LoginServlet extends HttpServlet {
         u.setPasswordhash(request.getParameter("password"));
         UtenteDAO uDAO = new UtenteDAO();
 
-        if (uDAO.doRetrieveByEmailPassword(u) != null) {
+        if (uDAO.doRetrieveEmailPassword(u) != null) {
             HttpSession session = request.getSession();
+            u = uDAO.doRetrieveEmailPassword(u);
             session.setAttribute("user", u);
             c = (Cart) session.getAttribute("sessionCart");
             if(c==null){

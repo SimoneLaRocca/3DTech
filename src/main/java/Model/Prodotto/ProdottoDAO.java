@@ -1,8 +1,7 @@
 package Model.Prodotto;
 
 
-import Model.ConPool;
-import Model.Prodotto.Prodotto;
+import Model.utilities.ConPool;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

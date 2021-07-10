@@ -1,24 +1,31 @@
 package Model.Ordine;
 
-import Model.Utente.Utente;
+import Model.utilities.Cart;
 
-import java.sql.Date;
+import java.time.LocalDate;
 
 public class Ordine {
     private int id;
     private int quantita;
-    private Date dataOrdine;
-    private Utente user;
+    private LocalDate dataOrdine;
+    private int userId;
+    private Cart carrello;
+    private boolean visible;
 
-    public Ordine() {
+    public int getUserId() {
+        return userId;
     }
 
-    public Utente getUser() {
-        return user;
+    public Cart getCarrello() {
+        return carrello;
     }
 
-    public void setUser(Utente user) {
-        this.user = user;
+    public void setCarrello(Cart carrello) {
+        this.carrello = carrello;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
     public int getId() {
@@ -37,11 +44,19 @@ public class Ordine {
         this.quantita = quantita;
     }
 
-    public Date getDataOrdine() {
+    public LocalDate getDataOrdine() {
         return dataOrdine;
     }
 
-    public void setDataOrdine(Date dataOrdine) {
+    public void setDataOrdine(LocalDate dataOrdine) {
         this.dataOrdine = dataOrdine;
+    }
+
+    public boolean isVisible() {
+        return visible;
+    }
+
+    public void setVisible(boolean flag) {
+        this.visible = flag;
     }
 }

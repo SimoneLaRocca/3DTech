@@ -1323,8 +1323,6 @@ id_ordine</ColNames>
       <ColNames>id_utente</ColNames>
       <RefTableName>utente</RefTableName>
       <RefColNames>id_utente</RefColNames>
-      <OnUpdate>cascade</OnUpdate>
-      <OnDelete>cascade</OnDelete>
     </foreign-key>
     <column id="365" parent="297" name="id_prodotto">
       <Position>1</Position>
@@ -1468,7 +1466,6 @@ id_ordine</ColNames>
     <column id="392" parent="300" name="data_di_nascita">
       <Position>6</Position>
       <DataType>date|0s</DataType>
-      <NotNull>1</NotNull>
     </column>
     <column id="393" parent="300" name="telefono">
       <Position>7</Position>

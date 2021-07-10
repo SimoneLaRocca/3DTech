@@ -17,7 +17,11 @@
             <div class="opzioni">
                 <ul>
                     <li><a href="#account">Account</a></li>
-                    <li><a href="#ordini">Ordini</a></li>
+                    <li>
+                        <form action="${contextPath}/order/orders" method="post">
+                            <button href="${contextPath}/order/orders">Ordini</button>
+                        </form>
+                    </li>
                     <li><a href="#logout">Logout</a></li>
                 </ul>
             </div>

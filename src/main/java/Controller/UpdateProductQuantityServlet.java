@@ -1,7 +1,6 @@
 package Controller;
 
-import Model.Cart;
-import Model.CartItem;
+import Model.utilities.Cart;
 import Model.Prodotto.Prodotto;
 import Model.Prodotto.ProdottoDAO;
 
@@ -9,7 +8,6 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
-import java.util.Optional;
 
 @WebServlet("/UpdateProductQuantityServlet")
 public class UpdateProductQuantityServlet extends HttpServlet {

@@ -34,7 +34,7 @@ public class RegistrazioneServlet extends HttpServlet {
         u.setZIPCode(request.getParameter("cap"));
         UtenteDAO uDAO = new UtenteDAO();
 
-        if(uDAO.doRetrieveByEmail(u)==null){
+        if(uDAO.doRetrieveEmailPassword(u)==null){
             uDAO.doSave(u);
             RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/jsp/RegistrazioneCompletata.jsp");
             rd.forward(request,response);

@@ -1,7 +1,6 @@
 package Model.Categoria;
 
-import Model.Categoria.Categoria;
-import Model.ConPool;
+import Model.utilities.ConPool;
 import Model.Prodotto.Prodotto;
 
 import java.sql.Connection;

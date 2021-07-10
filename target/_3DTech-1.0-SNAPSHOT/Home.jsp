@@ -10,6 +10,7 @@
     <script defer type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script defer src="js/bar_advices.js"></script>
     <script defer src="js/format.js"></script>
+    <script defer src="js/user_logged.js"></script>
 
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/blitzer/jquery-ui.css">
     <!-- Add the slick-theme.css if you want default styling -->
