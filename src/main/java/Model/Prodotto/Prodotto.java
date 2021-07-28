@@ -14,6 +14,7 @@ public class Prodotto {
     private double peso;
     private double sconto;
     private Categoria categoria;
+    private boolean visible;
 
 
     public Categoria getCategoria() {
@@ -24,7 +25,7 @@ public class Prodotto {
         this.categoria = categoria;
     }
 
-    public JSONObject getCaratteristiche(String string) {
+    public JSONObject getCaratteristiche() {
         return caratteristiche;
     }
 
@@ -94,6 +95,14 @@ public class Prodotto {
 
     public void setSconto(double sconto) {
         this.sconto = sconto;
+    }
+
+    public boolean isVisible() {
+        return visible;
+    }
+
+    public void setVisible(boolean flag) {
+        this.visible = flag;
     }
 
     @Override

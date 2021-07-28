@@ -29,7 +29,7 @@ public class CartItem {
     }
 
     public void setQuantita(int quantita) {
-        this.quantita += quantita;
+        this.quantita = quantita;
     }
 
     public double total() {

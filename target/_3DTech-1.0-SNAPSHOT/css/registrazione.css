@@ -1,0 +1,131 @@
+.registrazione {
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 0 2px rgba(0, 0, 0, 0.08);
+    border-radius: 2px;
+    position: relative;
+    padding: 24px 24px 32px;
+    margin: 40px auto 24px;
+    width: 284px;
+    min-width: 0;
+    height: 640px;
+}
+
+.accedi {
+    color: white;
+    border-radius: 4px;
+    padding: 4px 8px;
+    min-height: 24px;
+    border: none;
+    background-image: linear-gradient(grey 100%, grey 100%);
+    width: 100%;
+    height: 20px;
+}
+
+.input {
+    border-style: solid;
+    border-radius: 2px;
+    width: 100%;
+    outline: none;
+}
+
+.input:hover {
+    border-color: #00B5E2;
+}
+
+.accedi:hover {
+    background-image: linear-gradient(#00B5E2 0%, #59CBE8 100%);
+}
+
+.registrazione form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.accedi{
+    margin-top: 20px;
+}
+
+.alert_email {
+    float: left;
+    margin: -2px 0 0 20px;
+    padding: 3px 10px;
+    color: #fff;
+    border-radius: 3px 4px 4px 3px;
+    background-color: #ce5454;
+    max-width: 170px;
+    white-space: pre;
+    position: absolute;
+    left: 300px;
+    top: 42px;
+    opacity: 0;
+    z-index: 1;
+    transition: .15s ease-out;
+}
+
+.alert_password{
+    float: left;
+    height: 38px;
+    margin: -2px 0 0 20px;
+    padding: 3px 10px;
+    color: #fff;
+    border-radius: 3px 4px 4px 3px;
+    background-color: #ce5454;
+    white-space: pre;
+    position: absolute;
+    left: 300px;
+    bottom: 80px;
+    opacity: 0;
+    z-index: 1;
+    transition: .15s ease-out;
+}
+
+.alert_email::after, .alert_password::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    border-color: transparent #ce5454 transparent transparent;
+    border-style: solid;
+    border-width: 11px 7px;
+    position: absolute;
+    left: -13px;
+    top: 1px;
+}
+
+.alert_password::after{
+    top: 10px;
+}
+
+.advice {
+    opacity: 1;
+}
+
+@media screen and (max-width: 900px){
+
+    .registrazione {
+        height: 720px;
+    }
+
+    .registrazione form{
+        row-gap: 30px;
+    }
+
+    .alert_password{
+        left: 5px;
+        bottom: 46px;
+    }
+
+    .alert_email{
+        left: 5px;
+        top: 66px;
+    }
+
+    .alert_password::after, .alert_email::after{
+        content: none;
+    }
+
+    .accedi{
+        margin-top: 15px;
+    }
+}

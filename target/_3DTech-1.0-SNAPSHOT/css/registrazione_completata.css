@@ -1,0 +1,16 @@
+.completed {
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 0 2px rgba(0, 0, 0, 0.08);
+    border-radius: 2px;
+    position: relative;
+    padding: 24px 24px 32px;
+    margin: 40px auto 340px;
+    width: 220px;
+    min-width: 0;
+    height: 220px;
+}
+
+.check_mark {
+    float: right;
+    height: 100px;
+}

@@ -6,7 +6,9 @@ import Model.Ordine.OrdineDAO;
 import Model.Utente.Utente;
 import Model.utilities.Cart;
 import Model.utilities.CartItem;
+import Model.utilities.RequestValidator;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -18,7 +20,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 
-@WebServlet(urlPatterns = "/order/*")
+@WebServlet(urlPatterns = "/OrderServlet/*")
 public class OrderServlet extends HttpServlet {
 
     @Override
@@ -35,7 +37,7 @@ public class OrderServlet extends HttpServlet {
                 user.setOrdini(dao.doRetrieveOrdersWithProductsByUser(user.getId()));
                 System.out.println(user.getOrdini());
                 request.setAttribute("userOrders", user.getOrdini());
-                request.getRequestDispatcher("/ResocontoOrdini.jsp").forward(request, response);
+                request.getRequestDispatcher("/WEB-INF/jsp/ResocontoOrdini.jsp").forward(request, response);
                 break;
             case "/checkout": /* conferma l'ordine */
                 Cart c = (Cart) session.getAttribute("sessionCart");
@@ -50,22 +52,19 @@ public class OrderServlet extends HttpServlet {
                     order.setVisible(true);
                     dao.doSave(order);
                     c.reset();
-                    request.getRequestDispatcher("/Home.jsp").forward(request, response);
+                    request.getRequestDispatcher("/OrderServlet/orders").forward(request, response);
                 } else {
-                    response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Carrello vuoto");
-                    return;
+                    RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/jsp/Carrello.jsp");
+                    rd.forward(request,response);
                 }
                 break;
             case "/remove":
                 Utente user1 = (Utente) session.getAttribute("user");
-                int userId = user1.getId();
                 String idOrder = request.getParameter("order-id");
-                System.out.println(idOrder);
-                int id = Integer.parseInt(idOrder);
-                OrdineDAO ordineDAO = new OrdineDAO();
-                List<Ordine> orders = dao.doRetrieveOrdersWithProductsByUser(userId);
+                dao.doDeleteById(Integer.parseInt(idOrder));
+                List<Ordine> orders = dao.doRetrieveOrdersWithProductsByUser(user1.getId());
                 request.setAttribute("userOrders", orders);
-                request.getRequestDispatcher("/WEB-INF/results/orders.jsp").forward(request, response);
+                request.getRequestDispatcher("/WEB-INF/jsp/ResocontoOrdini.jsp").forward(request, response);
                 break;
             default:
                 response.sendError(HttpServletResponse.SC_NOT_FOUND, "Risorsa non trovata");

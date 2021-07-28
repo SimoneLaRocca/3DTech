@@ -42,8 +42,7 @@ public class FileServlet extends HttpServlet {
     @Override
     public void init() throws ServletException {
 
-        //TODO cambiare stringa "uploads", ipotetica variabile d'ambiente non trovata quando si deploya lo SNAPSHOT
-        this.basePath = FileServlet.getUploadPath() + File.separator + "special_folder" + File.separator;
+        this.basePath = FileServlet.getUploadPath() + File.separator + "special_folder" + File.separator + "progetto_imgs" + File.separator;
 
         // Validate base path.
         if (this.basePath == null) {

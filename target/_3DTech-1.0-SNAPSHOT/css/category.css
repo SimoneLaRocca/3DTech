@@ -1,60 +1,76 @@
-
-div.cat1 {
-    background-color: white;
-    height: 300px;
-    width: 400px;
-    margin-bottom: 15px;
-    margin-right: 15px;
+footer{
+    margin-top: 0;
 }
 
-div.cat2 {
-    background-color: white;
-    width: 400px;
-    height: 300px;
-    margin-bottom: 15px;
-    margin-right: 15px;
+.category {
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    min-width: 640px;
+    background-color: #EDEDED;
+    padding: 50px 5px;
+    height: min-content;
 }
 
-div.cat3 {
+.cat {
     background-color: white;
-    width: 400px;
-    height: 300px;
-    margin-bottom: 15px;
-    margin-right: 15px;
+    width: 380px;
+    height: 339px;
 }
 
-div.cat4 {
-    background-color: white;
-    width: 400px;
-    height: 300px;
-    margin-right: 15px;
-}
-
-div.cat5 {
-    background-color: white;
-    width: 400px;
-    height: 300px;
-    margin-right: 15px;
-}
-
-div.cat6 {
-    background-color: white;
-    width: 400px;
-    height: 300px;
-    margin-right: 15px;
-}
-
-.cat1 img, .cat2 img, .cat3 img, .cat4 img, .cat5 img, .cat6 img {
+.cat img {
+    padding: 0;
     width: 300px;
     height: 300px;
+    margin-left: 40px;
 }
 
-.category{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    position: relative;
-    min-width: 400px;
-    background-color: #BAE8D9;
-    padding: 20px;
+.category_label {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-family: Arial, "sans-serif";
+    background-color: #00B5E2;
+    color: white;
+    border: solid 1px lightgrey;
+    margin: 1px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+@media screen and (max-width: 480px) {
+    .category {
+        min-width: auto;
+    }
+
+    .cat {
+        width: 280px;
+    }
+
+    .cat img {
+        width: 270px;
+        height: 270px;
+        margin-left: 0;
+    }
+
+    .category_label{
+        position: relative;
+        bottom: -30px;
+    }
+
+    .cat img{
+        position: relative;
+        top: 20px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .category {
+        min-width: auto;
+    }
 }

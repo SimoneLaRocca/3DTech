@@ -16,10 +16,10 @@ public class GetAdvicesServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         ProdottoDAO pDAO = new ProdottoDAO();
         String s = request.getParameter("input_bar_value");
-        ArrayList<Prodotto> list = (ArrayList<Prodotto>) pDAO.doRetrievebyName(s);
-        JSONArray jarray = new JSONArray(list);
+        ArrayList<String> list = (ArrayList<String>) pDAO.doSearch(s);
+        JSONArray js_array = new JSONArray(list);
         response.setContentType("application/json");
-        response.getWriter().println(jarray);
+        response.getWriter().println(js_array);
     }
 
     @Override

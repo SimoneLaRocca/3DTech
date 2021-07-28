@@ -1,0 +1,47 @@
+.login {
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 0 2px rgba(0, 0, 0, 0.08);
+    border-radius: 2px;
+    position: relative;
+    padding: 24px 24px 32px;
+    margin: 40px auto 340px;
+    width: 284px;
+    min-width: 0;
+    height: 200px;
+}
+
+.accedi {
+    color: white;
+    border-radius: 4px;
+    padding: 4px 8px;
+    min-height: 24px;
+    border: none;
+    background-image: linear-gradient(grey 100%, grey 100%);
+    width: 100%;
+    height: 20px;
+}
+
+.input {
+    border-style: solid;
+    border-radius: 2px;
+    width: 100%;
+    outline: none;
+}
+
+.input:hover {
+    border-color: #00B5E2;
+}
+
+.accedi:hover {
+    background-image: linear-gradient(#00B5E2 0%, #59CBE8 100%);
+}
+
+.alert {
+    display: none;
+    padding: 20px 20px;
+    background-color: #f44336;
+    color: white;
+    margin-bottom: .2em;
+    line-height: 2em;
+    text-transform: uppercase;
+}

@@ -33,6 +33,14 @@ public class Cart {
         return prodotti.stream().filter(item -> item.getProdotto().getId() == id).findFirst();
     }
 
+    public CartItem find2(int id){
+        for(CartItem c : prodotti){
+            if(c.getProdotto().getId() == id)
+                return c;
+        }
+        return null;
+    }
+
     public boolean removeProduct(int id) {
         return prodotti.removeIf(item -> item.getProdotto().getId() == id);
     }

@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="3DTech" target="10" />
+      <module name="3DTech" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

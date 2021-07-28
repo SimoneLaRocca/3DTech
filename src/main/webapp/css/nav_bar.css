@@ -1,0 +1,180 @@
+body{
+    margin: 0
+}
+
+.accesso {
+    float: right;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+
+.accesso a {
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.accesso a:link {
+    color: black;
+}
+
+.accesso a:visited {
+    color: black;
+}
+
+.accesso a:hover {
+    color: white;
+    background-color: #00B5E2;
+    margin: 0;
+}
+
+.barra_di_nav {
+    position: static;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #00B5E2;
+    width: 100vw;
+    min-width: 320px;
+}
+
+nav a {
+    float: left;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 15px;
+    display: block;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    background-color: #59CBE8;
+}
+
+.search input {
+    outline: none;
+    width: 25%;
+    margin: 0 5% 0 0;
+    border: none;
+    float: right;
+    padding: 0;
+}
+
+.utente_loggato {
+    float: right;
+}
+
+.opzioni {
+    display: none;
+    position: absolute;
+    width: 100%;
+    color: white;
+    background-color: #00B5E2;
+    padding-left: 2px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+
+.down {
+    display: block;
+}
+
+.opzioni button{
+    border: none;
+    background-color: #00B5E2;
+    text-decoration: none;
+    padding: 12px 16px;
+    height: 100%;
+    width: 100%;
+    display: block;
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.opzioni button:hover{
+    border: none;
+    color: #00B5E2;
+    background-color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+div.opzioni a:hover {
+    background-color: white;
+    text-decoration: none;
+    width: 100%;
+    color: #00B5E2;
+}
+
+.email_user {
+    border: none;
+    background-color: white;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 8px;
+    margin: 0;
+}
+
+.email_user:hover {
+    border: none;
+    background-color: #00B5E2;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 8px;
+    margin: 0;
+}
+
+.email_user:active{
+    border: none;
+    background-color: #00B5E2;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 8px;
+    margin: 0;
+}
+
+.opzioni ul {
+    padding: 0;
+    margin: 0;
+    max-width: 120px;
+}
+
+.opzioni li {
+    list-style: none;
+    width: 200px;
+    height: 50px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+.carrello {
+    margin-right: 20px;
+    width: 35px;
+    height: 32px;
+    float: right;
+}
+
+.carrello:hover {
+    background-color: #00B5E2;
+}
+
+@media screen and (max-width: 600px){
+    .search input {
+        outline: none;
+        width: 150px;
+        border: none;
+        margin: 15px 0 0 15px;
+        float: none;
+    }
+}
+
