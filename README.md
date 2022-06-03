@@ -15,7 +15,7 @@ Here are some screenshots of the website.
 
 Homepage:
 ![2022-06-03 14_05_53-3DTech](https://user-images.githubusercontent.com/83709227/171904263-041a990f-1e29-439f-ab24-28521a3cf9aa.png)
-![2022-06-03 14_06_39-3DTech](https://user-images.githubusercontent.com/83709227/171904266-4628ee4f-858f-4fe6-a209-653d5f97835c.png)
+![2022-06-03 14_06_39-3DTech2](https://user-images.githubusercontent.com/83709227/171904914-3e1631a2-357e-42d9-ae0d-f251dbe9bc07.png)
 
 Products and cart:
 ![2022-06-03 14_08_00-Ricerca prodotti](https://user-images.githubusercontent.com/83709227/171904402-4f1926f4-3325-4cb3-ada6-8d7c7890b420.png)
