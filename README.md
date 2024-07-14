@@ -1,13 +1,14 @@
 # 3DTech
-The website was created for educational purposes for an exam, so it is not hosted on any web hosting provider.
+This repository contains the source code for a web-based project developed as part of a university course. The website is designed to serve as an online store for 3D printers.
 
-The technologies used are:
-- Tomcat (version 9.0.43)
-- MySQL
-- Intellij
+## Technologies, Frameworks, and Development Environment
+- **IntelliJ IDEA**: An integrated development environment for Java development.
+- **HTML & CSS**: Fundamental technologies for building and styling web pages.
+- **JavaScript/jQuery**: A fast and feature-rich JavaScript library for easier HTML document manipulation and event handling.
+- **Java Servlet API 4.0**: A set of APIs for handling HTTP requests and responses in Java.
+- **AJAX**: Techniques for creating asynchronous web applications using a combination of web technologies.
+- **Tomcat 9.0.43**: A server that implements Java Servlet and JavaServer Pages technologies.
+- **MySQL Server**: A popular relational database management system.
 
-The libraries used are:
-- JSTL: JavaServer Pages Standard Tag Library, is a collection of custom JSP tag libraries that provide common Web development functionality
-- chart.js: is a free JavaScript library for making HTML-based charts.
-- slick-carousel: a slideshow component for cycling through elements, images or slides of text, like a carousel
+
 
